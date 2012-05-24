@@ -1,9 +1,8 @@
 <?php get_header(); ?>
 <?php get_sidebar(); ?>
 
-<div id="wrapper" class="clearfix" > 
-<div id="maincol" >
-
+<div id="wrapper" class="clearfix" >
+<div id="maincol" class="accordion" >
 
 <?php if (have_posts()) : ?><?php while (have_posts()) : the_post(); ?>
 
@@ -12,30 +11,27 @@
 <div class="permalink"><a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>">Permanent Link</a></div>
 <?php the_content('Read more &raquo;'); ?>
 
-
 <?php link_pages('<p><strong>Pages:</strong> ', '</p>', 'number'); ?>
-<div id="postinfotext">
+<div class="postinfotext">
 Posted: <?php the_time('F jS, Y') ?><br/>
 Categories: <?php the_category(', ') ?><br/>
 Tags: <?php the_tags(''); ?><br/>
+<?php //stc_tweetbutton(); <br/> ?>
 Comments: <a href="<?php comments_link(); ?>"><?php comments_number('No Comments','1 Comment','% Comments'); ?></a>.
 </div>
 
-</div>	
+</div>
 <?php endwhile; ?>
-
 <div class="navigation">
+<br clear="all" />
 <span class="prevlink"><?php next_posts_link('Previous entries') ?></span>
 <span class="nextlink"><?php previous_posts_link('Next entries') ?></span>
 </div>
-		
+
 <?php else : ?>
 <h2 class="contentheader">Not found!</h2>
-<p>Could not find the requested page. Use the navigation menu to find your target, or use the search box below:</p>
-<?php include (TEMPLATEPATH . "/searchform.php"); ?>
+<p>Could not find the requested page. Use the navigation menu to find your target, or use the search box.</p>
 <?php endif; ?>
-
-
 
 </div>
 </div>

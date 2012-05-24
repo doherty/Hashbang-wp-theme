@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 <?php get_sidebar(); ?>
 
-<div id="wrapper" class="clearfix" > 
+<div id="wrapper" class="clearfix" >
 <div id="maincol" >
 
 <?php if (have_posts()) : ?>
@@ -31,8 +31,7 @@
 <?php the_content() ?>
 
 
-
-<div id="postinfotext">
+<div class="postinfotext">
 Posted: <?php the_time('F jS, Y') ?><br/>
 Categories: <?php the_category(', ') ?><br/>
 Tags: <?php the_tags(''); ?><br/>

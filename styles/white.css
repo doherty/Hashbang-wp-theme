@@ -1,80 +1,242 @@
-html, body{ background-color:#FFFFFF;} 
+html,body {
+    background-color:#FFF;
+}
 
-#header h1{ color:#CCCCCC;} 
-#header h1 a{color:#CCCCCC; }
-#header h1 a:hover{color:#333333; }
-#header h2{ color:#999999; } 
- 
-#menu {color:#CCCCCC; }
-#menu a {color:#CCCCCC; }
-#menu a:hover {color:#CCCCCC; }
+#header h1 {
+    color:#BBB;
+}
 
-h2.menuheader {color:#999999; }
-h2.menuheader:hover{color:#333333;}
-h2.menuheader:active{color:#333333;}
+#header h1 a {
+    color:#BBB;
+}
 
-#menu ul li{color:#CCCCCC; }
-#menu ul li a{ color:#CCCCCC; }
-#menu ul li a:hover{ color:#000000; }
+#header h1 a:hover {
+    color:#333;
+}
 
-#menu ul li ul li a{ color:#CCCCCC; }
-#menu ul li ul li a:hover{ color:#000000; }
+#header h2 {
+    color:#888;
+}
 
-#menu ul li ul li ul li a{ color:#CCCCCC; }
-#menu ul li ul li ul li a:hover{ color:#000000; }
+#menu {
+    color:#BBB;
+}
 
-#menu ul li ul li ul li ul li a{ color:#CCCCCC; }
-#menu ul li ul li ul li ul li a:hover{ color:#000000; }
+#menu a {
+    color:#BBB;
+}
 
-#recentcomments{ color:#CCCCCC; }
-#recentcomments a{ color:#CCCCCC; }
-#recentcomments a:hover{color:#000000; }
+#menu a:hover {
+    color:#BBB;
+}
 
-#maincol h2 a{color:#CCCCCC; } 
-#maincol h2 a:hover{ color:#333333;}
-#maincol p{color:#333333; }
-#maincol p a{ color:#333333; }
-#maincol p a:hover{ color:#333333; }
-#maincol ul{ color:#333333; }
-#maincol ol{ color:#333333; }
+h2 {
+    color:#888;
+}
 
-h2.contentheader{ color:#CCCCCC; } 
-h2.contentheader:hover{color:#333333;}
-h2.contentheader:active{color:#333333;}
+h2:hover {
+    color:#333;
+}
 
-.permalink{ color:#CCCCCC; } 
-.permalink a{color:#CCCCCC; } 
-.permalink a:hover{color:#333333; } 
+h2:active {
+    color:#333;
+}
 
-#wp-calendar{ color:#000000;}
-#wp-calendar a{ color:#333333;}
-#wp-calendar a:hover{ color:#000000;}
+#menu ul li {
+    color:#BBB;
+}
 
-blockquote p {color:#333333;}
-label {color:#333333;}
+#menu ul li a {
+    color:#BBB;
+}
 
-#s,#submit {background-color:#ffffff; border:1px solid #cccccc; color:#505050;}
-#author,#email,#url,#comment {border:1px solid #cccccc;}
+#menu ul li a:hover {
+    color:#000;
+}
 
-.left {border:1px solid #cccccc;}
-.right {border:1px solid #cccccc; }
-.center {border:1px solid #aaaaaa;}
+#menu ul li ul li a {
+    color:#BBB;
+}
 
-#postinfotext{color:#CCCCCC; border-top: 1px dashed #CCCCCC; border-bottom: 1px dashed #CCCCCC;}
-#postinfotext a { color:#CCCCCC; }
-#postinfotext a:hover{ color:#333333; }
+#menu ul li ul li a:hover {
+    color:#000;
+}
 
-.commentheader {color:#CCCCCC; }
+#menu ul li ul li ul li a {
+    color:#BBB;
+}
 
-.commenticon {color:#CCCCCC; }
-.commenticon a{ color:#CCCCCC; }
-.commenticon a:hover{ color:#333333; }
+#menu ul li ul li ul li a:hover {
+    color:#000;
+}
 
-.commenttext {color:#CCCCCC; }
-.commenttext p{color:#CCCCCC; }
+#menu ul li ul li ul li ul li a {
+    color:#BBB;
+}
 
-.wp-caption { border: 1px solid #ddd; background-color: #f3f3f3; }
+#menu ul li ul li ul li ul li a:hover {
+    color:#000;
+}
 
-.navigation {color:#CCCCCC; }
-.navigation a { color:#CCCCCC; }
-.navigation a:hover{ color:#333333; }
+#recentcomments {
+    color:#AAA;
+}
+
+#recentcomments a {
+    color:#AAA;
+}
+
+#recentcomments a:hover {
+    color:#000;
+}
+
+#maincol h2 a {
+    color:#BBB;
+}
+
+#maincol h2 a:hover {
+    color:#333;
+}
+
+#maincol p {
+    color:#333;
+}
+
+#maincol a {
+    color:#333;
+}
+
+#maincol a:hover {
+    color:#333;
+    text-decoration: none;
+    border-bottom: 1px #333 dashed;
+}
+
+#maincol ul {
+    color:#333;
+}
+
+#maincol ol {
+    color:#333;
+}
+
+h2.contentheader {
+    color:#AAA;
+}
+
+h2.contentheader:hover {
+    color:#333;
+}
+
+h2.contentheader:active {
+    color:#333;
+}
+
+.permalink {
+    color:#AAA;
+}
+
+.permalink a {
+    color:#AAA;
+}
+
+.permalink a:hover {
+    color:#333;
+}
+
+#wp-calendar {
+    color:#000;
+}
+
+#wp-calendar a {
+    color:#333;
+}
+
+#wp-calendar a:hover {
+    color:#000;
+}
+
+blockquote p {
+    color:#333;
+}
+
+label {
+    color:#333;
+}
+
+#s,#submit {
+    background-color:#FFF;
+    border:1px solid #AAA;
+    color:#505050;
+}
+
+#author,#email,#url,#comment {
+    border:1px solid #AAA;
+}
+
+.left {
+    border:1px solid #BBB;
+}
+
+.right {
+    border:1px solid #BBB;
+}
+
+.center {
+    border:1px solid #AAA;
+}
+
+.postinfotext {
+    color:#AAA;
+    border-top:1px dashed #AAA;
+    border-bottom:1px dashed #AAA;
+}
+
+.postinfotext a {
+    color:#AAA;
+}
+
+.postinfotext a:hover {
+    color:#333;
+}
+
+.commentheader {
+    color:#AAA;
+}
+
+.commenticon {
+    color:#AAA;
+}
+
+.commenticon a {
+    color:#AAA;
+}
+
+.commenticon a:hover {
+    color:#333;
+}
+
+.commenttext {
+    color:#AAA;
+}
+
+.commenttext p {
+    color:#AAA;
+}
+
+.wp-caption {
+    border:1px solid #ddd;
+    background-color:#f3f3f3;
+}
+
+.navigation {
+    color:#AAA;
+}
+
+.navigation a {
+    color:#AAA;
+}
+
+.navigation a:hover {
+    color:#333;
+}

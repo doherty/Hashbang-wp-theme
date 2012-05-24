@@ -1,80 +1,242 @@
-html, body{ background-color:#A5CEEF;} 
+html,body {
+    background-color:#A5CEEF;
+}
 
-#header h1{ color:#2377BC;} 
-#header h1 a{color:#2377BC; }
-#header h1 a:hover{color:#144670; }
-#header h2{ color:#1C6097; } 
- 
-#menu {color:#2377BC; }
-#menu a {color:#2377BC; }
-#menu a:hover {color:#2377BC; }
+#header h1 {
+    color:#1A61AC;
+}
 
-h2.menuheader {color:#2377BC; }
-h2.menuheader:hover{color:#144670;}
-h2.menuheader:active{color:#144670;}
+#header h1 a {
+    color:#1A61AC;
+}
 
-#menu ul li{color:#EAF3FB; }
-#menu ul li a{ color:#EAF3FB; }
-#menu ul li a:hover{ color:#2377BC; }
+#header h1 a:hover {
+    color:#144670;
+}
 
-#menu ul li ul li a{ color:#EAF3FB; }
-#menu ul li ul li a:hover{ color:#2377BC; }
+#header h2 {
+    color:#1C6097;
+}
 
-#menu ul li ul li ul li a{ color:#EAF3FB; }
-#menu ul li ul li ul li a:hover{ color:#2377BC; }
+#menu {
+    color:#1A61AC;
+}
 
-#menu ul li ul li ul li ul li a{ color:#EAF3FB; }
-#menu ul li ul li ul li ul li a:hover{ color:#2377BC; }
+#menu a {
+    color:#1A61AC;
+}
 
-#recentcomments{ color:#EAF3FB; }
-#recentcomments a{ color:#EAF3FB; }
-#recentcomments a:hover{color:#2377BC; }
+#menu a:hover {
+    color:#1A61AC;
+}
 
-#maincol h2 a{color:#EAF3FB; } 
-#maincol h2 a:hover{ color:#2377BC;}
-#maincol p{color:#2377BC; }
-#maincol p a{ color:#2377BC; }
-#maincol p a:hover{ color:#144670; }
-#maincol ul{ color:#2377BC; }
-#maincol ol{ color:#2377BC; }
+h2 {
+    color:#1A61AC;
+}
 
-h2.contentheader{ color:#EAF3FB; } 
-h2.contentheader:hover{color:#2377BC;}
-h2.contentheader:active{color:#2377BC;}
+h2:hover {
+    color:#144670;
+}
 
-.permalink{ color:#EAF3FB; } 
-.permalink a{color:#EAF3FB; } 
-.permalink a:hover{color:#2377BC; } 
+h2:active {
+    color:#144670;
+}
 
-#wp-calendar{ color:#EAF3FB;}
-#wp-calendar a{ color:#2377BC;}
-#wp-calendar a:hover{ color:#2377BC;}
+#menu ul li {
+    color:#EAF3FB;
+}
 
-blockquote p {color:#2377BC;}
-label {color:#2377BC;}
+#menu ul li a {
+    color:#EAF3FB;
+}
 
-#s,#submit {background-color:#A5CEEF; border:1px solid #2377BC; color:#505050;}
-#author,#email,#url,#comment {border:1px solid #2377BC;}
+#menu ul li a:hover {
+    color:#1A61AC;
+}
 
-.left {border:1px solid #2377BC;}
-.right {border:1px solid #2377BC; }
-.center {border:1px solid #2377BC;}
+#menu ul li ul li a {
+    color:#EAF3FB;
+}
 
-#postinfotext{color:#2377BC; border-top: 1px dashed #2377BC; border-bottom: 1px dashed #2377BC;}
-#postinfotext a { color:#2377BC; }
-#postinfotext a:hover{ color:#144670; }
+#menu ul li ul li a:hover {
+    color:#1A61AC;
+}
 
-.commentheader {color:#2377BC; }
+#menu ul li ul li ul li a {
+    color:#EAF3FB;
+}
 
-.commenticon {color:#2377BC; }
-.commenticon a{ color:#2377BC; }
-.commenticon a:hover{ color:#144670; }
+#menu ul li ul li ul li a:hover {
+    color:#1A61AC;
+}
 
-.commenttext {color:#2377BC; }
-.commenttext p{color:#2377BC; }
+#menu ul li ul li ul li ul li a {
+    color:#EAF3FB;
+}
 
-.wp-caption { border: 1px solid #2377BC; background-color: #A5CEEF; }
+#menu ul li ul li ul li ul li a:hover {
+    color:#1A61AC;
+}
 
-.navigation {color:#2377BC; }
-.navigation a { color:#2377BC; }
-.navigation a:hover{ color:#EAF3FB; }
+#recentcomments {
+    color:#EAF3FB;
+}
+
+#recentcomments a {
+    color:#EAF3FB;
+}
+
+#recentcomments a:hover {
+    color:#1A61AC;
+}
+
+#maincol h2 a {
+    color:#EAF3FB;
+}
+
+#maincol h2 a:hover {
+    color:#1A61AC;
+}
+
+#maincol p {
+    color:#1A61AC;
+}
+
+#maincol a {
+    color:#1A61AC;
+}
+
+#maincol a:hover {
+    color:#144670;
+    text-decoration: none;
+    border-bottom: 1px #144670 dashed;
+}
+
+#maincol ul {
+    color:#1A61AC;
+}
+
+#maincol ol {
+    color:#1A61AC;
+}
+
+h2.contentheader {
+    color:#EAF3FB;
+}
+
+h2.contentheader:hover {
+    color:#1A61AC;
+}
+
+h2.contentheader:active {
+    color:#1A61AC;
+}
+
+.permalink {
+    color:#EAF3FB;
+}
+
+.permalink a {
+    color:#EAF3FB;
+}
+
+.permalink a:hover {
+    color:#1A61AC;
+}
+
+#wp-calendar {
+    color:#EAF3FB;
+}
+
+#wp-calendar a {
+    color:#1A61AC;
+}
+
+#wp-calendar a:hover {
+    color:#1A61AC;
+}
+
+blockquote p {
+    color:#1A61AC;
+}
+
+label {
+    color:#1A61AC;
+}
+
+#s,#submit {
+    background-color:#A5CEEF;
+    border:1px solid #1A61AC;
+    color:#505050;
+}
+
+#author,#email,#url,#comment {
+    border:1px solid #1A61AC;
+}
+
+.left {
+    border:1px solid #1A61AC;
+}
+
+.right {
+    border:1px solid #1A61AC;
+}
+
+.center {
+    border:1px solid #1A61AC;
+}
+
+.postinfotext {
+    color:#1A61AC;
+    border-top:1px dashed #1A61AC;
+    border-bottom:1px dashed #1A61AC;
+}
+
+.postinfotext a {
+    color:#1A61AC;
+}
+
+.postinfotext a:hover {
+    color:#144670;
+}
+
+.commentheader {
+    color:#1A61AC;
+}
+
+.commenticon {
+    color:#1A61AC;
+}
+
+.commenticon a {
+    color:#1A61AC;
+}
+
+.commenticon a:hover {
+    color:#144670;
+}
+
+.commenttext {
+    color:#1A61AC;
+}
+
+.commenttext p {
+    color:#1A61AC;
+}
+
+.wp-caption {
+    border:1px solid #1A61AC;
+    background-color:#A5CEEF;
+}
+
+.navigation {
+    color:#1A61AC;
+}
+
+.navigation a {
+    color:#1A61AC;
+}
+
+.navigation a:hover {
+    color:#EAF3FB;
+}

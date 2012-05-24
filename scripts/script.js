@@ -1,31 +1,15 @@
-window.addEvent('domready', function() {
-var myAccordion = new Accordion($('menu'), 'h2.menuheader', 'div.menucontent', {
-opacity:true,
-display: -1,
-duration: 300,
-alwaysHide: true,
+$(function(){
+    // Accordion
+    $("h2.contentheader").disableSelection();
+    $("h2.menuheader").disableSelection();
+	$("#maincol.accordion")
+        .accordion({ header: "h2.contentheader", autoHeight: false, collapsible: true, animated: "easeInOutQuad", active: false })
+        .disableSelection();
+    $("#menu")
+        .accordion({ header: "h2.menuheader",    autoHeight: false, collapsible: true, animated: "easeInOutQuad", active: false })
+        .disableSelection();
 
-		onActive: function(menuheader, menucontent){
-			menuheader.setStyle('font-weight', 'bold');
-		},
-		onBackground: function(menuheader, menucontent){
-			menuheader.setStyle('font-weight', 'bold');
-		}
-});
-});
-
-window.addEvent('domready', function() {
-var myAccordion = new Accordion($('maincol'), 'h2.contentheader', 'div.content', {
-opacity:true,
-display: -1,
-duration: 300,
-alwaysHide: true,
-
-		onActive: function(contentheader, content){
-			contentheader.setStyle('font-weight', 'bold');
-		},
-		onBackground: function(contentheader, content){
-			contentheader.setStyle('font-weight', 'bold');
-		}
-});
+    $.stylesheetInit();
+    $('.styleswitch')
+        .bind('click', function(e) { $.stylesheetSwitch(this.getAttribute('rel')); return false; });
 });

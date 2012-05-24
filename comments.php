@@ -5,11 +5,11 @@
 <?php if ( $comments ) : ?>
 
 
-<div class="commentheader">Comments</div>
+<div class="commentheader" id="comments">Comments</div>
 
 <?php foreach ($comments as $comment) : ?>
 
-<div class="comment">
+<div class="comment" id="comment-<?php comment_ID(); ?>">
 <div class="gravatarside"><?php if (function_exists('get_avatar')) { echo get_avatar($comment,$size='48'); } ?></div>
 <div class="commenticon">
 <?php comment_type('Comment','Trackback','Pingback'); ?> from <?php if ('' != get_comment_author_url()) { ?><a href="<?php comment_author_url(); ?>"><?php comment_author() ?></a><?php } else { comment_author(); } ?>
@@ -42,7 +42,7 @@
 <?php else : ?>
 <label for="author">Name:</label><br />
 <input type="text" name="author" id="author" value="<?php echo $comment_author; ?>" tabindex="1" /><br/><br/>
-<label for="email">E-mail:</label><br />
+<label for="email">E-mail (will not be shown publicly):</label><br />
 <input type="text" name="email" id="email" value="<?php echo $comment_author_email; ?>" tabindex="2" /><br/><br/>
 <label for="url">URL:</label><br />
 <input type="text" name="url" id="url" value="<?php echo $comment_author_url; ?>" tabindex="3" /><br/><br/>

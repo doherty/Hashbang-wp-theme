@@ -1,0 +1,381 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"> 
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<title>jQuery UI Example Page</title>
+<link rel="stylesheet" type="text/css" href="http://hashbang.ca/wp-content/themes/minimalist/style.css" />
+<link rel="stylesheet" type="text/css" href="http://hashbang.ca/wp-content/themes/minimalist/styles/white.css" title="white" />
+<link rel="alternate stylesheet" type="text/css" href="http://hashbang.ca/wp-content/themes/minimalist/styles/black.css" title="black" />
+<link rel="alternate stylesheet" type="text/css" href="http://hashbang.ca/wp-content/themes/minimalist/styles/blue.css" title="blue" />
+
+<link rel="alternate stylesheet" type="text/css" href="http://hashbang.ca/wp-content/themes/minimalist/styles/green.css" title="green" />
+<link rel="alternate stylesheet" type="text/css" href="http://hashbang.ca/wp-content/themes/minimalist/styles/grey.css" title="grey" />
+<!--
+<script type="text/javascript" src="http://hashbang.ca/wp-content/themes/minimalist/scripts/mootools.js"></script>
+<script type="text/javascript" src="http://hashbang.ca/wp-content/themes/minimalist/scripts/script.js"></script>
+<script type="text/javascript" src="http://hashbang.ca/wp-content/themes/minimalist/scripts/styleswitcher.js"></script>-->
+		<script type="text/javascript" src="jquery-1.5.2.min.js"></script>
+		<script type="text/javascript" src="js/jquery-ui-1.8.12.custom.min.js"></script>
+        <script type="text/javascript" src="styleswitcher-2.js"></script>
+		<script type="text/javascript">
+$(function(){
+    // Accordion
+    $("h2.contentheader").disableSelection();
+    $("h2.menuheader").disableSelection();
+	$("#maincol")
+        .accordion({ header: "h2", autoHeight: false, collapsible: true, animated: "easeInOutQuad", active: false })
+        .disableSelection();
+    $("#menu")
+        .accordion({ header: "h2", autoHeight: false, collapsible: true, animated: "easeInOutQuad", active: false })
+        .disableSelection();
+    $.stylesheetInit();
+    $('.styleswitch')
+        .bind('click', function(e) { $.stylesheetSwitch(this.getAttribute('rel')); return false; });
+});
+		</script>
+	</head>
+<body>
+<div id="page" >
+<div id="header" >
+<h1><a href="http://hashbang.ca" title="hashbang.ca">hashbang.ca</a></h1>
+<h2>Mike Doherty</h2>
+</div><div id="leftcol" >
+<div id="menu">
+
+<h2 class="menuheader">About</h2>
+
+<div class="menucontent">
+<p>1) Experimental cognitive neuropsychology</p>
+<p>2) Computer science</p>
+<p>3) ???</p>
+<p>4) PROFIT!</p>
+</div>
+
+<h2 class="menuheader">Pages</h2>
+<div class="menucontent">
+<ul>
+<li class="page_item page-item-7"><a href="http://hashbang.ca/home/" title="Home">Home</a></li>
+
+<li class="page_item page-item-234"><a href="http://hashbang.ca/privacy-policy/" title="Privacy policy">Privacy policy</a></li>
+<li class="page_item page-item-17"><a href="http://hashbang.ca/perl/" title="Perl">Perl</a>
+<ul class='children'>
+    <li class="page_item page-item-33"><a href="http://hashbang.ca/perl/the-usual/" title="The usual advice">The usual advice</a>
+    <ul class='children'>
+        <li class="page_item page-item-48"><a href="http://hashbang.ca/perl/the-usual/more/" title="More advice">More advice</a></li>
+    </ul>
+</li>
+    <li class="page_item page-item-51"><a href="http://hashbang.ca/perl/get-help/" title="Where to get help">Where to get help</a></li>
+
+    <li class="page_item page-item-60"><a href="http://hashbang.ca/perl/cpan-shell/" title="The CPAN shell">The CPAN shell</a></li>
+    <li class="page_item page-item-132"><a href="http://hashbang.ca/perl/testing/" title="How to write tests">How to write tests</a></li>
+</ul>
+</li>
+<li class="page_item page-item-80"><a href="http://hashbang.ca/load-average/" title="Understanding load averages">Understanding load averages</a></li>
+<li class="page_item page-item-67"><a href="http://hashbang.ca/ssh-key/" title="SSH key">SSH key</a></li>
+<li class="page_item page-item-71"><a href="http://hashbang.ca/openpgp-key/" title="OpenPGP key">OpenPGP key</a></li>
+</ul>
+</div>
+
+                <h2 class="menuheader">Posts</h2><div class="menucontent">      <ul>
+                <li><a href="http://hashbang.ca/2011/04/21/introducing-utf8-all/" title="Introducing utf8::all">Introducing utf8::all</a></li>
+                <li><a href="http://hashbang.ca/2011/04/15/twitter-should-let-third-party-devs-help-them-out/" title="Twitter should let third-party devs help them out">Twitter should let third-party devs help them out</a></li>
+                <li><a href="http://hashbang.ca/2011/04/06/how-do-you-watch-cpan-modules-of-interest/" title="How do you watch CPAN modules of interest?">How do you watch CPAN modules of interest?</a></li>
+                <li><a href="http://hashbang.ca/2011/04/02/another-word-on-namespaces/" title="Another word on namespaces">Another word on namespaces</a></li>
+                <li><a href="http://hashbang.ca/2011/03/30/i-accepted-a-job-offer/" title="I accepted a job offer">I accepted a job offer</a></li>
+                </ul>
+
+        </div>
+<h2 class="menuheader">Comments</h2>
+<div class="menucontent" style="overflow: visible;">
+<ul id="recentcomments">
+<li class="recentcomments"><p>Mark Lawrence on <a href="http://hashbang.ca/2011/04/21/introducing-utf8-all/#comment-52">Introducing utf8::all</a></p></li>
+<li class="recentcomments"><p><a href='http://hashbang.ca' rel='external nofollow' class='url'>Mike Doherty</a> on <a href="http://hashbang.ca/2011/04/21/introducing-utf8-all/#comment-51">Introducing utf8::all</a></p></li>
+<li class="recentcomments"><p><a href='http://hashbang.ca' rel='external nofollow' class='url'>Mike Doherty</a> on <a href="http://hashbang.ca/2011/04/21/introducing-utf8-all/#comment-50">Introducing utf8::all</a></p></li>
+<li class="recentcomments"><p>Walter on <a href="http://hashbang.ca/2011/04/21/introducing-utf8-all/#comment-49">Introducing utf8::all</a></p></li>
+<li class="recentcomments"><p>Jakub Narębski on <a href="http://hashbang.ca/2011/04/21/introducing-utf8-all/#comment-48">Introducing utf8::all</a></p></li>
+<li class="recentcomments"><p><a href='http://blog.fox.geek.nz/' rel='external nofollow' class='url'>Kent Fredric</a> on <a href="http://hashbang.ca/2011/04/02/another-word-on-namespaces/#comment-47">Another word on namespaces</a></p></li>
+</ul>
+</div>
+<h2 class="menuheader">Tags</h2>
+<div class="menucontent"><div class="tagcloud"><br /><a href='http://hashbang.ca/tag/android/' class='tag-link-27' title='1 topic' style='font-size: 8pt;'>android</a>
+
+<a href='http://hashbang.ca/tag/chromatic/' class='tag-link-13' title='1 topic' style='font-size: 8pt;'>chromatic</a>
+<a href='http://hashbang.ca/tag/cli/' class='tag-link-29' title='1 topic' style='font-size: 8pt;'>cli</a>
+<a href='http://hashbang.ca/tag/cpan/' class='tag-link-26' title='2 topics' style='font-size: 13.25pt;'>cpan</a>
+<a href='http://hashbang.ca/tag/drdc/' class='tag-link-19' title='1 topic' style='font-size: 8pt;'>DRDC</a>
+<a href='http://hashbang.ca/tag/dzil/' class='tag-link-25' title='1 topic' style='font-size: 8pt;'>dzil</a>
+<a href='http://hashbang.ca/tag/floss/' class='tag-link-20' title='1 topic' style='font-size: 8pt;'>FLOSS</a>
+<a href='http://hashbang.ca/tag/git/' class='tag-link-22' title='1 topic' style='font-size: 8pt;'>git</a>
+<a href='http://hashbang.ca/tag/kentnl/' class='tag-link-23' title='1 topic' style='font-size: 8pt;'>kentnl</a>
+<a href='http://hashbang.ca/tag/linux/' class='tag-link-7' title='1 topic' style='font-size: 8pt;'>linux</a>
+
+<a href='http://hashbang.ca/tag/modern-perl/' class='tag-link-16' title='1 topic' style='font-size: 8pt;'>modern perl</a>
+<a href='http://hashbang.ca/tag/movabletype/' class='tag-link-12' title='1 topic' style='font-size: 8pt;'>movabletype</a>
+<a href='http://hashbang.ca/tag/perl/' class='tag-link-4' title='5 topics' style='font-size: 22pt;'>perl</a>
+<a href='http://hashbang.ca/tag/perl5i/' class='tag-link-15' title='2 topics' style='font-size: 13.25pt;'>perl5i</a>
+<a href='http://hashbang.ca/tag/php/' class='tag-link-10' title='1 topic' style='font-size: 8pt;'>php</a>
+<a href='http://hashbang.ca/tag/rwstauner/' class='tag-link-24' title='1 topic' style='font-size: 8pt;'>rwstauner</a>
+<a href='http://hashbang.ca/tag/schwern/' class='tag-link-14' title='2 topics' style='font-size: 13.25pt;'>schwern</a>
+<a href='http://hashbang.ca/tag/scm/' class='tag-link-21' title='1 topic' style='font-size: 8pt;'>SCM</a>
+<a href='http://hashbang.ca/tag/twitter/' class='tag-link-28' title='1 topic' style='font-size: 8pt;'>twitter</a>
+
+<a href='http://hashbang.ca/tag/unicode/' class='tag-link-30' title='1 topic' style='font-size: 8pt;'>unicode</a>
+<a href='http://hashbang.ca/tag/usability/' class='tag-link-17' title='1 topic' style='font-size: 8pt;'>usability</a>
+<a href='http://hashbang.ca/tag/windows/' class='tag-link-8' title='1 topic' style='font-size: 8pt;'>windows</a>
+<a href='http://hashbang.ca/tag/wordpress/' class='tag-link-11' title='1 topic' style='font-size: 8pt;'>wordpress</a><br /><br /></div>
+</div><h2 class="menuheader">Categories</h2><div class="menucontent">       <ul>
+    <li class="cat-item cat-item-6"><a href="http://hashbang.ca/category/os/" title="View all posts filed under OS">OS</a>
+<ul class='children'>
+    <li class="cat-item cat-item-27"><a href="http://hashbang.ca/category/os/android/" title="View all posts filed under android">android</a>
+
+</li>
+    <li class="cat-item cat-item-7"><a href="http://hashbang.ca/category/os/linux/" title="View all posts filed under linux">linux</a>
+</li>
+    <li class="cat-item cat-item-8"><a href="http://hashbang.ca/category/os/windows/" title="View all posts filed under windows">windows</a>
+</li>
+</ul>
+</li>
+    <li class="cat-item cat-item-3"><a href="http://hashbang.ca/category/programming/" title="View all posts filed under programming">programming</a>
+<ul class='children'>
+    <li class="cat-item cat-item-4"><a href="http://hashbang.ca/category/programming/perl/" title="View all posts filed under perl">perl</a>
+
+</li>
+    <li class="cat-item cat-item-9"><a href="http://hashbang.ca/category/programming/ui/" title="View all posts filed under UI">UI</a>
+</li>
+</ul>
+</li>
+    <li class="cat-item cat-item-18"><a href="http://hashbang.ca/category/work/" title="View all posts filed under work">work</a>
+</li>
+        </ul>
+</div><h2 class="menuheader">Archives</h2><div class="menucontent">     <ul>
+            <li><a href='http://hashbang.ca/2011/04/' title='April 2011'>April 2011</a></li>
+
+    <li><a href='http://hashbang.ca/2011/03/' title='March 2011'>March 2011</a></li>
+    <li><a href='http://hashbang.ca/2011/02/' title='February 2011'>February 2011</a></li>
+    <li><a href='http://hashbang.ca/2011/01/' title='January 2011'>January 2011</a></li>
+    <li><a href='http://hashbang.ca/2010/12/' title='December 2010'>December 2010</a></li>
+        </ul>
+</div><h2 class="menuheader">Search</h2><div class="menucontent">    <form method="get" id="searchform" action="/index.php">
+
+        <div>
+            <br />
+            <label for="s">Search for:</label><br />
+            <input type="text" value="" name="s" id="s" size="14" />
+            <input type="hidden" id="searchsubmit" value="Search" />
+        </div>
+    </form></div><h2 class="menuheader">Utils</h2><div class="menucontent">         <ul>
+
+                        <li><a href="http://hashbang.ca/wp-login.php">Log in</a></li>
+            <li><a href="http://hashbang.ca/feed/" title="Syndicate this site using RSS 2.0">Entries <abbr title="Really Simple Syndication">RSS</abbr></a></li>
+            <li><a href="http://hashbang.ca/comments/feed/" title="The latest comments to all posts in RSS">Comments <abbr title="Really Simple Syndication">RSS</abbr></a></li>
+                        </ul>
+</div>
+<h2 class="menuheader">Customise</h2>
+<div class="menucontent">
+
+<ul>
+<li><a href="#" class="styleswitch" rel="white">White</a></li>
+<li><a href="#" class="styleswitch" rel="black">Black</a></li>
+<li><a href="#" class="styleswitch" rel="blue">Blue</a></li>
+<li><a href="#" class="styleswitch" rel="green">Green</a></li>
+<li><a href="#" class="styleswitch" rel="grey">Grey</a></li>
+</ul>
+</div>
+
+</div>
+</div>
+<div id="wrapper" class="clearfix" > 
+
+<div id="maincol" >
+
+
+
+<h2 class="contentheader">Introducing utf8::all</h2>
+<div class="content">
+<div class="permalink"><a href="http://hashbang.ca/2011/04/21/introducing-utf8-all/" rel="bookmark" title="Permanent Link to Introducing utf8::all">Permanent Link</a></div>
+<p>Perl programmers are probably all aware of the <a href="http://p3rl.org/urf8">utf8</a> pragma, which turns on UTF-8 in your source code. This is actually a stumbling block for new programmers, who might think that utf8 makes your filehandles use UTF-8 by default, or automagically turns incoming data into UTF-8, and ensures outgoing data is all UTF-8 as well. Sadly, that&#8217;s not the case. <a href="http://hashbang.ca/2011/04/21/introducing-utf8-all/#more-278" class="more-link">Read more &raquo;</a></p>
+
+<div class="postinfotext">
+Posted: April 21st, 2011<br/>
+Categories: <a href="http://hashbang.ca/category/programming/perl/" title="View all posts in perl" rel="category tag">perl</a>, <a href="http://hashbang.ca/category/programming/" title="View all posts in programming" rel="category tag">programming</a><br/>
+Tags: <a href="http://hashbang.ca/tag/cpan/" rel="tag">cpan</a>, <a href="http://hashbang.ca/tag/perl5i/" rel="tag">perl5i</a>, <a href="http://hashbang.ca/tag/schwern/" rel="tag">schwern</a>, <a href="http://hashbang.ca/tag/unicode/" rel="tag">unicode</a><br/>
+
+Comments: <a href="http://hashbang.ca/2011/04/21/introducing-utf8-all/#comments">5 Comments</a>.
+</div>
+
+</div>  
+
+<h2 class="contentheader">Twitter should let third-party devs help them out</h2>
+<div class="content">
+<div class="permalink"><a href="http://hashbang.ca/2011/04/15/twitter-should-let-third-party-devs-help-them-out/" rel="bookmark" title="Permanent Link to Twitter should let third-party devs help them out">Permanent Link</a></div>
+<p>Twitter is <a href="http://news.cnet.com/8301-1023_3-20042391-93.html">oh so very concerned</a> with providing a high-quality and consistent experience across all devices and platforms. <a href="http://hashbang.ca/2011/04/15/twitter-should-let-third-party-devs-help-them-out/#more-260" class="more-link">Read more &raquo;</a></p>
+
+
+<div class="postinfotext">
+Posted: April 15th, 2011<br/>
+Categories: <a href="http://hashbang.ca/category/os/android/" title="View all posts in android" rel="category tag">android</a>, <a href="http://hashbang.ca/category/programming/ui/" title="View all posts in UI" rel="category tag">UI</a><br/>
+Tags: <a href="http://hashbang.ca/tag/android/" rel="tag">android</a>, <a href="http://hashbang.ca/tag/twitter/" rel="tag">twitter</a><br/>
+Comments: <a href="http://hashbang.ca/2011/04/15/twitter-should-let-third-party-devs-help-them-out/#comments">No Comments</a>.
+
+</div>
+
+</div>  
+
+<h2 class="contentheader">How do you watch CPAN modules of interest?</h2>
+<div class="content">
+<div class="permalink"><a href="http://hashbang.ca/2011/04/06/how-do-you-watch-cpan-modules-of-interest/" rel="bookmark" title="Permanent Link to How do you watch CPAN modules of interest?">Permanent Link</a></div>
+<p>This post is really a request for advice. I&#8217;m sure there must be a solution out there, I just haven&#8217;t found it yet.</p>
+<p>Imagine you have a module that pulls in a bunch of prerequisites. You want to watch those prerequisites (and maybe all the way down the the dependency tree) for test failures. Maybe you also want to be notified of new releases. You might even want to try <a href="http://p3rl.org/CPAN::Changes">extracting</a> the most recent section of the changelog.</p>
+
+<p>What&#8217;s the best way to get these sorts of notifications? If you can&#8217;t get it all from one place, is there a tool to aggregate the data sources? If not, that sounds like an interesting project&#8230;</p>
+
+
+<div class="postinfotext">
+Posted: April 6th, 2011<br/>
+Categories: <a href="http://hashbang.ca/category/programming/perl/" title="View all posts in perl" rel="category tag">perl</a>, <a href="http://hashbang.ca/category/programming/" title="View all posts in programming" rel="category tag">programming</a><br/>
+Tags: <a href="http://hashbang.ca/tag/cpan/" rel="tag">cpan</a><br/>
+
+Comments: <a href="http://hashbang.ca/2011/04/06/how-do-you-watch-cpan-modules-of-interest/#comments">7 Comments</a>.
+</div>
+
+</div>  
+
+<h2 class="contentheader">Another word on namespaces</h2>
+<div class="content">
+<div class="permalink"><a href="http://hashbang.ca/2011/04/02/another-word-on-namespaces/" rel="bookmark" title="Permanent Link to Another word on namespaces">Permanent Link</a></div>
+<p>Kent Frederic&#8217;s <a href="http://blog.fox.geek.nz/2011/01/making-minting-profile-as-cpanized-dist.html">recent post</a> about Dist::Zilla minting profiles was a great overview of the subject, but because I try to follow best practices, I was struck by the section &#8220;A word on namespaces.&#8221;</p>
+
+<p>Kent recommends that if you&#8217;re making an author pluginbundle, you should name it Dist::Zilla::PluginBundle::Author::$CPANID. This extra bit of namespacing makes life easier for many people in many ways. I was immediately convinced that he was right, and <a href="https://twitter.com/#!/_doherty/status/29700267352006657">moved</a> my author stuff into appropriate author namespaces<br />
+ <a href="http://hashbang.ca/2011/04/02/another-word-on-namespaces/#more-238" class="more-link">Read more &raquo;</a></p>
+
+
+<div class="postinfotext">
+Posted: April 2nd, 2011<br/>
+Categories: <a href="http://hashbang.ca/category/programming/perl/" title="View all posts in perl" rel="category tag">perl</a>, <a href="http://hashbang.ca/category/programming/" title="View all posts in programming" rel="category tag">programming</a><br/>
+
+Tags: <a href="http://hashbang.ca/tag/dzil/" rel="tag">dzil</a>, <a href="http://hashbang.ca/tag/kentnl/" rel="tag">kentnl</a>, <a href="http://hashbang.ca/tag/rwstauner/" rel="tag">rwstauner</a><br/>
+Comments: <a href="http://hashbang.ca/2011/04/02/another-word-on-namespaces/#comments">3 Comments</a>.
+</div>
+
+</div>  
+
+<h2 class="contentheader">I accepted a job offer</h2>
+<div class="content">
+<div class="permalink"><a href="http://hashbang.ca/2011/03/30/i-accepted-a-job-offer/" rel="bookmark" title="Permanent Link to I accepted a job offer">Permanent Link</a></div>
+
+<p>I was late to join the job search process for my first co-op work term, but I was invited for several interviews. One of the most interesting jobs I applied for was a specific project with Defence Research and Development Canada. One of DRDC&#8217;s task groups is building a fake submarine for training purposes. The sub has mocked systems ranging from a sheet of paper saying &#8220;here are some buttons&#8221; up to a sophisticated computer simulation of real submarine systems. They were looking for someone to do the simulated sonar system. The project involves everything from soliciting requirements, finding and analyzing off-the-shelf software products (including FLOSS!) to meet those requirements, installing &amp; integrating the system, doing quality assurance, and documenting the entire process.</p>
+<p>I was lucky enough to be interviewed for the position, and I received an offer. I&#8217;ve happily accepted, and assuming the background check overlooks the hit-and-run, I&#8217;ll begin in May.</p>
+<p>The location is very convenient for me, and it&#8217;ll be an exciting and challenging project to work on. I&#8217;m sure it&#8217;ll provide an excellent opportunity to both apply and expand my knowledge over the course of the summer. I&#8217;m excited to get started!</p>
+
+
+<div class="postinfotext">
+Posted: March 30th, 2011<br/>
+Categories: <a href="http://hashbang.ca/category/work/" title="View all posts in work" rel="category tag">work</a><br/>
+Tags: <a href="http://hashbang.ca/tag/drdc/" rel="tag">DRDC</a>, <a href="http://hashbang.ca/tag/floss/" rel="tag">FLOSS</a><br/>
+Comments: <a href="http://hashbang.ca/2011/03/30/i-accepted-a-job-offer/#comments">No Comments</a>.
+</div>
+
+</div>  
+
+<h2 class="contentheader">Still no partial checkouts in Git</h2>
+<div class="content">
+<div class="permalink"><a href="http://hashbang.ca/2011/03/14/still-no-partial-checkouts-in-git/" rel="bookmark" title="Permanent Link to Still no partial checkouts in Git">Permanent Link</a></div>
+<p>Richard Fine has an excellent blog post discussing why <a title="It's time to stop using Subversion" href="http://altdevblogaday.org/2011/03/09/its-time-to-stop-using-subversion/">it&#8217;s time to stop using Subversion</a>. I was struck by the similarities between his reasons for leaving SVN in the dust and mine: <a href="http://hashbang.ca/2011/03/14/still-no-partial-checkouts-in-git/#more-214" class="more-link">Read more &raquo;</a></p>
+
+
+<div class="postinfotext">
+Posted: March 14th, 2011<br/>
+
+Categories: <a href="http://hashbang.ca/category/programming/" title="View all posts in programming" rel="category tag">programming</a>, <a href="http://hashbang.ca/category/programming/ui/" title="View all posts in UI" rel="category tag">UI</a><br/>
+Tags: <a href="http://hashbang.ca/tag/git/" rel="tag">git</a>, <a href="http://hashbang.ca/tag/scm/" rel="tag">SCM</a><br/>
+Comments: <a href="http://hashbang.ca/2011/03/14/still-no-partial-checkouts-in-git/#comments">1 Comment</a>.
+</div>
+
+</div>  
+
+<h2 class="contentheader">Human usability testers wanted</h2>
+
+<div class="content">
+<div class="permalink"><a href="http://hashbang.ca/2011/02/27/human-usability-testers-wanted/" rel="bookmark" title="Permanent Link to Human usability testers wanted">Permanent Link</a></div>
+<p>When I wrote <a href="http://p3rl.org/App::perlhl">App::perlhl</a> <a title="CLI Perl syntax highlighter" href="/163">a few weeks ago</a>, I was mostly concerned with getting it working. I picked colours more-or-less at random, and I noted that I planned to tweak them to achieve better readability. I&#8217;d like to do some hallway usability testing &#8211; if you&#8217;re interested, please try cloning my <a href="https://github.com/doherty/App-perlhl">git repository</a> and playing with the branches. Master has one colour scheme, and I created colour-2 and colour-3 to test two more schemes. Try them out &amp; let me know what you find most easiest to read. If you want to play with the colouring yourself, I&#8217;d be happy to accept whichever one people find best. Thanks!</p>
+
+
+<div class="postinfotext">
+Posted: February 27th, 2011<br/>
+Categories: <a href="http://hashbang.ca/category/programming/perl/" title="View all posts in perl" rel="category tag">perl</a>, <a href="http://hashbang.ca/category/programming/" title="View all posts in programming" rel="category tag">programming</a><br/>
+Tags: <a href="http://hashbang.ca/tag/perl/" rel="tag">perl</a>, <a href="http://hashbang.ca/tag/usability/" rel="tag">usability</a><br/>
+Comments: <a href="http://hashbang.ca/2011/02/27/human-usability-testers-wanted/#comments">No Comments</a>.
+
+</div>
+
+</div>  
+
+<h2 class="contentheader">The death of tribal knowledge</h2>
+<div class="content">
+<div class="permalink"><a href="http://hashbang.ca/2011/02/11/the-death-of-tribal-knowledge/" rel="bookmark" title="Permanent Link to The death of tribal knowledge">Permanent Link</a></div>
+<p>Michael Schwern <a href="http://osdc.blip.tv/file/4447749/">talks</a> about Perl5&#8242;s shortcomings, and explains how <a href="http://p3rl.org/perl5i">perl5i</a> can overcome many of them &#8211; it is a pragma to fix as much of Perl 5 as possible all at once. While I haven&#8217;t worked with perl5i much, I wanted to talk about something Schwern talked about that resonated with me, and that&#8217;s the concept of &#8220;tribal knowledge.&#8221;<br />
+
+ <a href="http://hashbang.ca/2011/02/11/the-death-of-tribal-knowledge/#more-190" class="more-link">Read more &raquo;</a></p>
+
+
+<div class="postinfotext">
+Posted: February 11th, 2011<br/>
+Categories: <a href="http://hashbang.ca/category/programming/perl/" title="View all posts in perl" rel="category tag">perl</a>, <a href="http://hashbang.ca/category/programming/" title="View all posts in programming" rel="category tag">programming</a><br/>
+Tags: <a href="http://hashbang.ca/tag/modern-perl/" rel="tag">modern perl</a>, <a href="http://hashbang.ca/tag/perl/" rel="tag">perl</a>, <a href="http://hashbang.ca/tag/perl5i/" rel="tag">perl5i</a>, <a href="http://hashbang.ca/tag/schwern/" rel="tag">schwern</a><br/>
+
+Comments: <a href="http://hashbang.ca/2011/02/11/the-death-of-tribal-knowledge/#comments">3 Comments</a>.
+</div>
+
+</div>  
+
+<h2 class="contentheader">CLI Perl syntax highlighter</h2>
+<div class="content">
+<div class="permalink"><a href="http://hashbang.ca/2011/01/31/cli-perl-syntax-highlighter/" rel="bookmark" title="Permanent Link to CLI Perl syntax highlighter">Permanent Link</a></div>
+<p>Last night, someone posed a problem in #perl-help. They wanted to have syntax highlighting in their shell for Perl code. I immediately suggested that they use <a href="http://pygments.org">Pygments</a> &#8211; I knew about it because I&#8217;d used it before, and I had experimented with the command line tool. But I was surprised there wasn&#8217;t already a Perl solution.<br />
+
+ <a href="http://hashbang.ca/2011/01/31/cli-perl-syntax-highlighter/#more-163" class="more-link">Read more &raquo;</a></p>
+
+
+<div class="postinfotext">
+Posted: January 31st, 2011<br/>
+Categories: <a href="http://hashbang.ca/category/programming/perl/" title="View all posts in perl" rel="category tag">perl</a>, <a href="http://hashbang.ca/category/programming/" title="View all posts in programming" rel="category tag">programming</a><br/>
+Tags: <a href="http://hashbang.ca/tag/cli/" rel="tag">cli</a>, <a href="http://hashbang.ca/tag/perl/" rel="tag">perl</a><br/>
+
+Comments: <a href="http://hashbang.ca/2011/01/31/cli-perl-syntax-highlighter/#comments">No Comments</a>.
+</div>
+
+</div>  
+
+<h2 class="contentheader">A Perl yardstick</h2>
+<div class="content">
+<div class="permalink"><a href="http://hashbang.ca/2011/01/30/perl-yardstick/" rel="bookmark" title="Permanent Link to A Perl yardstick">Permanent Link</a></div>
+<p><a href="http://www.wgz.org/chromatic/">chromatic</a> identified some reasons why it is difficult to <a href="http://www.modernperlbooks.com/mt/2011/01/why-you-cant-hire-great-perl-programmers.html">hire great Perl programmers</a>, and then followed it up with some <a href="http://www.modernperlbooks.com/mt/2011/01/how-to-identify-a-good-perl-programmer.html">advice</a> for hiring managers. They suggest a series of questions every good Perl programmer should be able to answer. I wanted to know how I stacked up.<br />
+
+ <a href="http://hashbang.ca/2011/01/30/perl-yardstick/#more-114" class="more-link">Read more &raquo;</a></p>
+
+
+<div class="postinfotext">
+Posted: January 30th, 2011<br/>
+Categories: <a href="http://hashbang.ca/category/programming/perl/" title="View all posts in perl" rel="category tag">perl</a>, <a href="http://hashbang.ca/category/programming/" title="View all posts in programming" rel="category tag">programming</a><br/>
+Tags: <a href="http://hashbang.ca/tag/chromatic/" rel="tag">chromatic</a>, <a href="http://hashbang.ca/tag/perl/" rel="tag">perl</a><br/>
+
+Comments: <a href="http://hashbang.ca/2011/01/30/perl-yardstick/#comments">3 Comments</a>.
+</div>
+
+</div>  
+<br clear="all" />
+<div class="navigation">
+<span class="prevlink"><a href="http://hashbang.ca/page/2/" >Previous entries</a></span>
+<span class="nextlink"></span>
+</div>
+        
+
+</div>
+</div>
+
+</div>
+
+</body>
+</html>
+
+

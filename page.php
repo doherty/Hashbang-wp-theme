@@ -1,10 +1,8 @@
 <?php get_header(); ?>
 <?php get_sidebar(); ?>
 
-<div id="wrapper" class="clearfix" > 
-<div id="maincol" >
-
-
+<div id="wrapper" class="clearfix">
+<div id="maincol">
 
 <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
@@ -17,8 +15,6 @@
 <?php comments_template(); ?>
 
 <?php endwhile; endif; ?>
-
-
 
 </div>
 </div>
