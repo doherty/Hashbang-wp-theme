@@ -14,3 +14,5 @@ Authors:
 To install, dump the files in a directory called 'hashbang'
 in wp-content/themes, then activate the theme via the admin
 dashbard.
+
+The source is hosted on [Github](https://github.com/doherty/Hashbang-wp-theme)
