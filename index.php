@@ -23,7 +23,7 @@ Comments: <a href="<?php comments_link(); ?>"><?php comments_number('No Comments
 </div>
 <?php endwhile; ?>
 <div class="navigation">
-<br clear="all" />
+<br class="clear" />
 <span class="prevlink"><?php next_posts_link('Previous entries') ?></span>
 <span class="nextlink"><?php previous_posts_link('Next entries') ?></span>
 </div>

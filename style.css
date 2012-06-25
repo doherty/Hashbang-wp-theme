@@ -728,6 +728,10 @@ img.alignleft {
     display:block;
 }
 
+.clear {
+    clear: both;
+}
+
 /* End hide from IE-mac */
 /*printer styles*/
 @media print {
