@@ -28,8 +28,31 @@ else {
 </title>
 
 <meta http-equiv="content-type" content="text/html; charset=<?php bloginfo('charset'); ?>" />
-<meta name="description" content="<?php bloginfo('name'); ?> - <?php bloginfo('description'); ?>" />
-<meta name="keywords" content="<?php bloginfo('name'); ?> - <?php bloginfo('description'); ?>" />
+<meta name="description" content="<?php
+if ( is_single() ) {
+    single_post_title('', true);
+}
+else {
+    bloginfo('name'); ?> - <?php bloginfo('description');
+}
+?>" />
+<meta name="keywords" content="<?php
+if ( is_single() ) {
+    $post = $wp_query->post;
+    $tags = get_the_tags($post->ID);
+    if ($tags) {
+        foreach ($tags as $tag) {
+            echo $tag->name . ' ';
+        }
+    }
+    else {
+        bloginfo('name'); ?> - <?php bloginfo('description');
+    }
+}
+else {
+    bloginfo('name'); ?> - <?php bloginfo('description');
+}
+?>" />
 <meta name="google-site-verification" content="O8GjPUp_ztuFmLF6KI45mxBxYm2ZcIbNb0t49ZNRoHA" />
 <meta name="msvalidate.01" content="76C14A4C09E9693551D652DBC2A70D62" />
 

@@ -37,3 +37,4 @@ Comments: <a href="<?php comments_link(); ?>"><?php comments_number('No Comments
 </div>
 
 <?php get_footer(); ?>
+
