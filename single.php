@@ -16,7 +16,7 @@
 if( function_exists('_trackableshare_embed') ) { _trackableshare_embed(); }
 if( function_exists('the_flattr_permalink') ) { the_flattr_permalink(); }
 ?><br />
-Posted: <?php the_time('F jS, Y') ?><br/>
+Posted: <?php the_time('F jS, Y') ?>, by <?php the_author_posts_link(); ?><br/>
 Categories: <?php the_category(', ') ?><br/>
 Tags: <?php the_tags(''); ?><br/>
 <?php //stc_tweetbutton();<br/> ?>
