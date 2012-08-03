@@ -12,7 +12,7 @@
 <?php the_content('Read more &raquo;'); ?>
 
 <div class="postinfotext">
-Posted: <?php the_time('F jS, Y') ?><br/>
+Posted: <?php the_time('F jS, Y') ?>, by <?php the_author_posts_link(); ?><br/>
 Categories: <?php the_category(', ') ?><br/>
 Tags: <?php the_tags(''); ?><br/>
 <?php //stc_tweetbutton(); <br/> ?>
