@@ -660,6 +660,11 @@ img.alignleft {
     margin:0 5px 5px;
 }
 
+.avatar {
+    float: right;
+    margin: 0 auto;
+}
+
 .wp-caption {
     text-align:center;
     padding-top:4px;
