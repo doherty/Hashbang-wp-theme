@@ -11,7 +11,6 @@
 <div class="permalink"><a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>">Permanent Link</a></div>
 <?php the_content('Read more &raquo;'); ?>
 
-<?php link_pages('<p><strong>Pages:</strong> ', '</p>', 'number'); ?>
 <div class="postinfotext">
 Posted: <?php the_time('F jS, Y') ?><br/>
 Categories: <?php the_category(', ') ?><br/>
@@ -24,8 +23,8 @@ Comments: <a href="<?php comments_link(); ?>"><?php comments_number('No Comments
 <?php endwhile; ?>
 <div class="navigation">
 <br class="clear" />
-<span class="prevlink"><?php next_posts_link('Previous entries') ?></span>
-<span class="nextlink"><?php previous_posts_link('Next entries') ?></span>
+<span class="prevlink"><?php next_posts_link('Older entries') ?></span>
+<span class="nextlink"><?php previous_posts_link('Newer entries') ?></span>
 </div>
 
 <?php else : ?>
