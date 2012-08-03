@@ -19,13 +19,20 @@ $author = (get_query_var('author_name'))
     <dt>Email</dt>
         <dd><?php echo $author->user_email; ?></dd>
 <?php
-if ($jabber = $author->jabber) { echo "<dt>Jabber</dt><dd>$jabber</dd>\n"; }
-if ($aim = $author->aim) { echo "<dt>AIM</dt><dd>$aim</dd>\n"; }
-if ($yahoo = $author->yim) { echo "<dt>Yahoo! IM</dt><dd>$yahoo</dd>\n"; }
+//if ($twitter = $author->twitter)    { echo "<dt>Twitter</td><dd>$twitter</dd>\n"; }
+//if ($google = $author->googleplus)  { echo "<dt>Google+</dt><dd>$google</dd>\n"; }
+//if ($linkedin = $author->linkedin)  { echo "<dt>LinkedIn</dt><dd>$linkedin</dd>\n"; }
+if ($jabber = $author->jabber)      { echo "<dt>Jabber</dt><dd>$jabber</dd>\n"; }
+if ($aim = $author->aim)            { echo "<dt>AIM</dt><dd>$aim</dd>\n"; }
+if ($yahoo = $author->yim)          { echo "<dt>Yahoo! IM</dt><dd>$yahoo</dd>\n"; }
 
 $links = get_bookmarks( array('orderby' => 'rating') );
-foreach ($links as $link) {
-    printf('<dt>%s</td><dd><a href="%s">%s</a></dd>', $link->link_name, $link->link_url, $link->link_url);
+if ( !empty($links) ) {
+    echo '<dt>Links</dt><dd>';
+    foreach ($links as $link) {
+        printf("<a href='%s'>%s</a>\n", $link->link_url, $link->link_name);
+    }
+    echo '</dd>';
 }
 ?>
 </dl>
