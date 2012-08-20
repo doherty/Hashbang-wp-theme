@@ -3,16 +3,17 @@ Hashbang
 
 Hashbang is a minimalist Wordpress theme for <http://hashbang.ca>
 
-Hashbang is a rewritten version of Minimalist. It is a fast-loading,
-minimalist, Wordpress theme utilising jQuery, with 5 different colour
-schemes and no images.
+Hashbang is a rewritten version of "[Minimalist](http://wordpress.org/extend/themes/minimalist)"
+by Joey Robinson. It is a fast-loading, minimalist, Wordpress theme using
+jQuery, with 5 different colour schemes and no images. The theme uses all
+protocol-relative URLs, making it suitable for use over both HTTP and HTTPS
+(although Wordpress makes this difficult).
 
 Authors:
   - Mike Doherty <mike@mikedoherty.ca>
   - Joey Robinson <info@techdesigns.co.uk> (author of "[Minimalist](http://wordpress.org/extend/themes/minimalist)")
 
-To install, dump the files in a directory called 'hashbang'
-in wp-content/themes, then activate the theme via the admin
-dashbard.
+To install, dump the files in a directory called 'hashbang' in `wp-content/themes`,
+then activate the theme via the admin dashboard.
 
 The source is hosted on [Github](https://github.com/doherty/Hashbang-wp-theme)
