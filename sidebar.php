@@ -1,18 +1,10 @@
-<div id="leftcol" >
+<div id="leftcol">
 <div id="menu">
 
-<h2 class="menuheader">About</h2>
-<div class="menucontent">
-<p>1) Experimental cognitive neuropsychology</p>
-<p>2) Computer science</p>
-<p>3) ???</p>
-<p>4) PROFIT!</p>
-</div>
-
-<h2 class="menuheader">Pages</h2>
+<h2 class="menuheader">Author</h2>
 <div class="menucontent">
 <ul>
-<?php wp_list_pages('sort_column=menu_order&title_li='); ?>
+<li><a href="/author/doherty">Mike Doherty</a></li>
 </ul>
 </div>
 
@@ -29,5 +21,5 @@
 </ul>
 </div>
 
-</div>
-</div>
+</div><!--/menu-->
+</div><!--/leftcol-->
