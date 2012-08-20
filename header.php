@@ -14,13 +14,13 @@ elseif (is_404()) {
 	echo '404 Not Found';
 }
 elseif (is_category()) {
-	echo 'Category:'; wp_title('');
+	echo 'Category: '; wp_title('');
 }
 elseif (is_search()) {
 	echo 'Search Results: '; the_search_query();
 }
 elseif ( is_day() || is_month() || is_year() ) {
-	echo 'Archives:'; wp_title('');
+	echo 'Archives: '; wp_title('');
 }
 else {
 	echo wp_title('');
@@ -78,8 +78,7 @@ else {
 </head>
 
 <body>
-<div id="page" >
-<div id="header" >
+<div id="page">
+<div id="header">
 <h1><a href="<?php bloginfo('url'); ?>" title="<?php bloginfo('name'); ?>"><?php bloginfo('name'); ?></a></h1>
-<h2><?php bloginfo('description'); ?></h2>
-</div>
+</div><!--/header-->
