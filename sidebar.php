@@ -1,13 +1,6 @@
 <div id="leftcol">
 <div id="menu">
 
-<h2 class="menuheader">Author</h2>
-<div class="menucontent">
-<ul>
-<li><a href="/author/doherty">Mike Doherty</a></li>
-</ul>
-</div>
-
 <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar() ); ?>
 
 <h2 class="menuheader">Customise</h2>
