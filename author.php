@@ -51,7 +51,6 @@ if ( !empty($links) ) {
 <?php endif; ?>
 <!-- End Loop -->
 </ul>
-</div>
-</div>
-
+</div><!--/maincol-->
+</div><!--/wrapper-->
 <?php get_footer(); ?>

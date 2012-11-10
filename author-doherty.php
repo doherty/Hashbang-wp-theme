@@ -20,8 +20,11 @@ $author = (get_query_var('author_name'))
 I'm a well-rounded computer geek. I do open-source technology like linux and perl,
 but I've studied widely - from foreign policy to Plato's Speech of Aristophanes.<br />
 
-This blog is my own to neglect as I see fit. My shorter musings are found on
-Twitter - <a href="https://twitter.com/_doherty">@_doherty</a>.
+This work is licensed under a <a rel="license"
+href="http://creativecommons.org/licenses/by-sa/3.0/deed.en_GB">
+Creative Commons Attribution-ShareAlike 3.0 Unported License</a>.
+If you value concision, try my Twitter feed:
+<a href="https://twitter.com/_doherty">@_doherty</a>.
 </p>
 <dl>
     <dt>Email</dt>
@@ -62,7 +65,6 @@ if ( !empty($links) ) {
 <?php endif; ?>
 <!-- End Loop -->
 </ul>
-</div>
-</div>
-
+</div><!--/maincol-->
+</div><!--/wrapper-->
 <?php get_footer(); ?>

@@ -240,3 +240,6 @@ label {
 .navigation a:hover {
     color:#FFF;
 }
+
+.copyright, .copyright a {
+    color: #222;

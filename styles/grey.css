@@ -244,3 +244,7 @@ label {
 .navigation a:hover {
     color:#515151;
 }
+
+.copyright, .copyright a {
+    color: #CCC;
+}

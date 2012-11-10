@@ -1,8 +1,8 @@
 <?php get_header(); ?>
 <?php get_sidebar(); ?>
 
-<div id="wrapper" class="clearfix" >
-<div id="maincol" class="accordion" >
+<div id="wrapper" class="clearfix">
+<div id="maincol" class="accordion">
 
 <?php if (have_posts()) : ?><?php while (have_posts()) : the_post(); ?>
 
@@ -32,8 +32,6 @@ Comments: <a href="<?php comments_link(); ?>"><?php comments_number('No Comments
 <p>Could not find the requested page. Use the navigation menu to find your target, or use the search box.</p>
 <?php endif; ?>
 
-</div>
-</div>
-
+</div><!--/maincol-->
+</div><!--/wrapper-->
 <?php get_footer(); ?>
-

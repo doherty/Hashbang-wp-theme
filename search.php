@@ -30,7 +30,6 @@ Comments: <a href="<?php comments_link(); ?>"><?php comments_number('No Comments
 <p>No matches. Please try again, or use the navigation menus to find what you search for.</p>
 <?php endif; ?>
 
-</div>
-</div>
-
+</div><!--/maincol-->
+</div><!--/wrapper-->
 <?php get_footer(); ?>

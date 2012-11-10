@@ -1,8 +1,8 @@
 <?php get_header(); ?>
 <?php get_sidebar(); ?>
 
-<div id="wrapper" class="clearfix" >
-<div id="maincol" >
+<div id="wrapper" class="clearfix">
+<div id="maincol">
 
 <?php if (have_posts()) : ?>
 
@@ -43,6 +43,6 @@ Comments: <a href="<?php comments_link(); ?>"><?php comments_number('No Comments
 
 <?php else : ?>
 <?php endif; ?>
-</div>
-</div>
+</div><!--/maincol-->
+</div><!--/wrapper
 <?php get_footer(); ?>

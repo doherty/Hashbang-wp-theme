@@ -22,25 +22,31 @@ Tags: two-columns, white, black, blue, green, silver, fixed-width, left-sidebar
 
 
 html,body {
-    padding:20px 0;
-    margin:0;
-    text-align:center;
-    font-family:JunctionRegular, verdana, sans-serif;
-    font-size:13px;
+    margin: 0;
+    text-align: center;
+    font-family: JunctionRegular, verdana, sans-serif;
+    font-size: 13px;
+    height: 100%;
 }
 
 #page {
-    width:900px;
-    text-align:left;
-    margin-left:auto;
-    margin-right:auto;
+    width: 900px;
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto !important;
+    min-height: 100%;
+    position: relative;
+}
+
+#wrapper {
+    padding: 0 0 1em 0;
 }
 
 #header {
     position:relative;
-    width:900px;
-    margin:5px 0 0 0;
-    padding:5px 0 0 0;
+    width:100%;
+    padding: 25px 5px 0 0;
     height:50px;
     overflow-x:hidden;
 }
@@ -711,6 +717,25 @@ img.alignleft {
 
 .nextlink {
     margin:0 0 0 6px;
+}
+
+.copyright {
+    color: #AAA;
+    font-size: 0.75em;
+    text-align: center;
+    width: 100%;
+    height: 2em;
+    position: absolute;
+    bottom: 0;
+    clear: both;
+}
+
+.copyright p {
+    margin: 0;
+}
+
+.copyright a {
+    color: #AAA;
 }
 
 .clearfix:after {

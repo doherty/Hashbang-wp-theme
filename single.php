@@ -29,7 +29,6 @@ Comments: <a href="<?php comments_link(); ?>"><?php comments_number('No Comments
 <p>No matching entries found.</p>
 <?php endif; ?>
 
-</div>
-</div>
-
+</div><!--/maincol-->
+</div><!--/wrapper-->
 <?php get_footer(); ?>

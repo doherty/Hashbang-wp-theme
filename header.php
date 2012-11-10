@@ -5,25 +5,25 @@
 <title>
 <?php
 if ( is_front_page() || is_home() ) {
-	echo bloginfo('description');
+    echo bloginfo('description');
 }
 elseif ( is_single() || is_page() ) {
-	echo wp_title('');
+    echo wp_title('');
 }
 elseif (is_404()) {
-	echo '404 Not Found';
+    echo '404 Not Found';
 }
 elseif (is_category()) {
-	echo 'Category: '; wp_title('');
+    echo 'Category: '; wp_title('');
 }
 elseif (is_search()) {
-	echo 'Search Results: '; the_search_query();
+    echo 'Search Results: '; the_search_query();
 }
 elseif ( is_day() || is_month() || is_year() ) {
-	echo 'Archives: '; wp_title('');
+    echo 'Archives: '; wp_title('');
 }
 else {
-	echo wp_title('');
+    echo wp_title('');
 } ?> &raquo; <?php bloginfo('name'); ?>
 </title>
 
