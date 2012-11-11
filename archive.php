@@ -44,5 +44,5 @@ Comments: <a href="<?php comments_link(); ?>"><?php comments_number('No Comments
 <?php else : ?>
 <?php endif; ?>
 </div><!--/maincol-->
-</div><!--/wrapper
+</div><!--/wrapper-->
 <?php get_footer(); ?>
