@@ -32,30 +32,38 @@ else { comment_author(); } ?>
 
 <?php if ($post->comment_status == "open") : ?>
 <div id="respond">
-<div class="navigation">Write a comment</div>
 <?php if (get_option('comment_registration') && !$user_ID) : ?>
 <p>You need to <a href="<?php echo get_option('siteurl'); ?>/wp-login.php?redirect_to=<?php the_permalink(); ?>">login</a> to post comments!</p>
 </div>
 
 <?php else : ?>
 <form action="<?php echo get_option('siteurl'); ?>/wp-comments-post.php" method="post" id="commentform">
+<fieldset>
+<legend>Submit comments</legend>
+
 <?php if ($user_ID) : ?>
-<p class="loggedin">You are logged in as <a href="<?php echo get_option('siteurl'); ?>/wp-admin/profile.php"><?php echo $user_identity; ?></a>. <a href="<?php echo get_option('siteurl'); ?>/wp-login.php?action=logout" title="Log out">Log out</a>.</p>
+<p class="loggedin">You are logged in as
+<a href="<?php echo get_option('siteurl'); ?>/wp-admin/profile.php"><?php echo $user_identity; ?></a>.
+<a href="<?php echo get_option('siteurl'); ?>/wp-login.php?action=logout" title="Log out">Log out</a>.
+</p>
 
 <?php else : ?>
-<label for="author">Name:</label><br />
-<input type="text" name="author" id="author" value="<?php echo $comment_author; ?>" tabindex="1" /><br/><br/>
-<label for="email">E-mail (will not be shown publicly):</label><br />
-<input type="text" name="email" id="email" value="<?php echo $comment_author_email; ?>" tabindex="2" /><br/><br/>
-<label for="url">URL:</label><br />
-<input type="text" name="url" id="url" value="<?php echo $comment_author_url; ?>" tabindex="3" /><br/><br/>
+<label for="author">Name: </label>
+<input type="text" name="author" id="author" value="<?php echo $comment_author; ?>" tabindex="1" /><br />
+<label for="email">E-mail (will not be shown publicly)</label>
+<input type="text" name="email" id="email" value="<?php echo $comment_author_email; ?>" tabindex="2" /><br />
+<label for="url">URL (optional)</label>
+<input type="text" name="url" id="url" value="<?php echo $comment_author_url; ?>" tabindex="3" /><br />
 
 <?php endif; ?>
 <label for="comment">Message:</label><br />
-<textarea name="comment" id="comment" cols="45" rows="4" tabindex="4"></textarea><br/><br/>
+<textarea name="comment" id="comment" cols="78" rows="4" tabindex="4"></textarea><br />
+
 <input type="hidden" name="comment_post_ID" value="<?php echo $id; ?>" />
+
 <input type="submit" name="submit" value="Submit!" class="button" tabindex="5" />
 <?php do_action('comment_form', $post->ID); ?>
+</fieldset>
 </form>
 </div>
 
