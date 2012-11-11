@@ -312,6 +312,7 @@ ul#recentcomments li a:hover {
 /*    overflow-x:hidden;*/
     text-align:left;
     line-height: 1.7em;
+    margin-bottom: 1em;
 }
 
 #maincol h1 {
