@@ -3,26 +3,29 @@
 <?php return; endif; ?>
 
 <?php if ( $comments ) : ?>
-
-
 <div class="commentheader" id="comments">Comments</div>
 
 <?php foreach ($comments as $comment) : ?>
 
-<div class="comment" id="comment-<?php comment_ID(); ?>">
-<div class="gravatarside"><?php if (function_exists('get_avatar')) { echo get_avatar($comment,$size='48'); } ?></div>
+<div class="comment clearfix" id="comment-<?php comment_ID(); ?>">
+<div class="gravatarside"><?php
+if ( get_option('show_avatars') && function_exists('get_avatar') ) {
+    echo get_avatar( $comment, 80, get_option('avatar_default','blank') );
+}
+?></div><!--/gravatarside-->
 <div class="commenticon">
-<?php comment_type('Comment','Trackback','Pingback'); ?> from <?php if ('' != get_comment_author_url()) { ?><a href="<?php comment_author_url(); ?>"><?php comment_author() ?></a><?php } else { comment_author(); } ?>
-<?php edit_comment_link('[e]',' | '); ?> - <?php comment_date() ?> at <?php comment_time(); ?></div>
+<?php comment_type('Comment','Trackback','Pingback'); ?> from <?php
+if ( '' != get_comment_author_url() ) { ?><a href="<?php comment_author_url(); ?>"><?php comment_author() ?></a><?php }
+else { comment_author(); } ?>
+<?php edit_comment_link('[e]',' | '); ?> - <?php comment_date() ?> at <?php comment_time(); ?>
+</div><!--/commenticon-->
 
-<div class="commenttext"><?php comment_text() ?></div>
+<div class="commenttext"><?php comment_text() ?></div><!--/commenttext-->
 
 <?php if ($comment->comment_approved == '0') : ?>
 <p>Thank you for your comment! It has been added to the moderation queue and will be published here if approved by the webmaster.</p>
 <?php endif; ?>
-</div>
-
-
+</div><!--/comment-<?php comment_ID(); ?>-->
 
 <?php endforeach; ?>
 <?php endif; ?>
@@ -58,4 +61,3 @@
 
 <?php endif; ?>
 <?php endif; ?>
-
