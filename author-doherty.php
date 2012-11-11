@@ -36,8 +36,9 @@ If you value concision, try my Twitter feed:
     <dt>CPAN</dt>
         <dd><a href="https://metacpan.org/author/DOHERTY">DOHERTY</a></dd>
     <dt>GPG key</dt>
-        <dd><a href="http://keyserver.ubuntu.com:11371/pks/lookup?search=0xDBB915AE&op=index">
-            <pre style="margin:0;">3627 B320 385F FFD0 8823 861A 1038 C3B7 DBB9 15AE</pre></a>
+        <dd><a href="http://keyserver.ubuntu.com:11371/pks/lookup?search=0xDBB915AE&amp;op=index">
+            <span style="margin:0;font-family:monospace;">3627 B320 385F FFD0 8823 861A 1038 C3B7 DBB9 15AE</span>
+            </a>
         </dd>
 <?php
 $links = get_bookmarks( array('orderby' => 'rating', exclude => '8,9,12') );
