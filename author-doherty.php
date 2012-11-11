@@ -21,7 +21,7 @@ I'm a well-rounded computer geek. I do open-source technology like linux and per
 but I've studied widely - from foreign policy to Plato's Speech of Aristophanes.<br />
 
 This work is licensed under a <a rel="license"
-href="http://creativecommons.org/licenses/by-sa/3.0/deed.en_GB">
+href="http://creativecommons.org/licenses/by-sa/3.0/deed.en">
 Creative Commons Attribution-ShareAlike 3.0 Unported License</a>.
 If you value concision, try my Twitter feed:
 <a href="https://twitter.com/_doherty">@_doherty</a>.
