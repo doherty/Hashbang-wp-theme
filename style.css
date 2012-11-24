@@ -472,14 +472,10 @@ table#calendar_wrap {
 }
 
 blockquote {
-    margin:20px;
-    padding:8px 8px 8px 15px;
-}
-
-blockquote p {
-    background-color:inherit;
-    font-size:.9em;
-    line-height:1.3em;
+    border: 1px solid #AAA;
+    display: table;
+    padding: 10px 15px 10px 15px;
+    background-color: #F9F9F9;
 }
 
 label {

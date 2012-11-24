@@ -157,7 +157,7 @@ h2.contentheader:active {
 }
 
 blockquote p {
-    color:#FFF;
+    color:#555 !important;
 }
 
 label {
