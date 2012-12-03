@@ -53,8 +53,6 @@ else {
     bloginfo('name'); ?> - <?php bloginfo('description');
 }
 ?>" />
-<meta name="google-site-verification" content="O8GjPUp_ztuFmLF6KI45mxBxYm2ZcIbNb0t49ZNRoHA" />
-<meta name="msvalidate.01" content="76C14A4C09E9693551D652DBC2A70D62" />
 
 <link rel="stylesheet" type="text/css" href="<?php bloginfo('stylesheet_url'); ?>" />
 <link rel="stylesheet" type="text/css" href="<?php bloginfo('stylesheet_directory'); ?>/styles/white.css" title="white" />
