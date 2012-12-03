@@ -63,8 +63,7 @@ else {
 
 <script type="text/javascript" src="<?php bloginfo('stylesheet_directory'); ?>/scripts/jquery-1.5.2.min.js"></script>
 <script type="text/javascript" src="<?php bloginfo('stylesheet_directory'); ?>/scripts/jquery-ui-1.8.12.custom.min.js"></script>
-<script type="text/javascript" src="<?php bloginfo('stylesheet_directory'); ?>/scripts/script.js"></script>
-<script type="text/javascript" src="<?php bloginfo('stylesheet_directory'); ?>/scripts/styleswitcher.js"></script>
+<script type="text/javascript" src="<?php bloginfo('stylesheet_directory'); ?>/scripts/main.js"></script>
 
 <link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="<?php bloginfo('rss2_url'); ?>" />
 <link rel="alternate" type="text/xml" title="RSS .92" href="<?php bloginfo('rss_url'); ?>" />
