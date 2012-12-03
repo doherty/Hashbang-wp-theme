@@ -61,6 +61,8 @@ else {
 <link rel="alternate stylesheet" type="text/css" href="<?php bloginfo('stylesheet_directory'); ?>/styles/green.css" title="green" />
 <link rel="alternate stylesheet" type="text/css" href="<?php bloginfo('stylesheet_directory'); ?>/styles/grey.css" title="grey" />
 
+<?php wp_head(); ?>
+
 <script type="text/javascript" src="<?php bloginfo('stylesheet_directory'); ?>/scripts/jquery-1.5.2.min.js"></script>
 <script type="text/javascript" src="<?php bloginfo('stylesheet_directory'); ?>/scripts/jquery-ui-1.8.12.custom.min.js"></script>
 <script type="text/javascript" src="<?php bloginfo('stylesheet_directory'); ?>/scripts/main.js"></script>
@@ -71,7 +73,6 @@ else {
 <link rel="alternate" type="application/rss+xml" title="all comments - RSS 2.0" href="<?php bloginfo('comments_rss2_url'); ?>" />
 <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
 <link rel="shortcut icon" href="/favicon.ico" />
-<?php wp_head(); ?>
 </head>
 
 <body>
