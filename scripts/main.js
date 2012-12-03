@@ -11,7 +11,7 @@
 
     // To switch to a specific named stylesheet
     $.stylesheetSwitch = function(styleName) {
-        $('link[@rel*=style][title]').each(
+        $('link[rel~="stylesheet"][title]').each(
             function(i) {
                 this.disabled = true;
                 if (this.getAttribute('title') == styleName) {
@@ -25,7 +25,7 @@
 
     // To initialise the stylesheet
     $.stylesheetInit = function() {
-        $('link[rel*=style][title]').each(
+        $('link[rel~="stylesheet"][title]').each(
             function(i) {
                 availableStylesheets.push(this.getAttribute('title'));
             }
@@ -41,14 +41,14 @@
 function createCookie(name,value,days) {
     if (days) {
         var date = new Date();
-        date.setTime(date.getTime()+(days*24*60*60*1000));
-        var expires = "; expires="+date.toGMTString();
+        date.setTime( date.getTime() + (days*24*60*60*1000) );
+        var expires = '; expires=' + date.toGMTString();
     }
-    else var expires = "";
-    document.cookie = name+"="+value+expires+"; path=/";
+    else var expires = '';
+    document.cookie = name + '=' + value + expires + '; path=/';
 }
 function readCookie(name) {
-    var nameEQ = name + "=";
+    var nameEQ = name + '=';
     var ca = document.cookie.split(';');
     for(var i=0;i < ca.length;i++) {
         var c = ca[i];
@@ -58,23 +58,23 @@ function readCookie(name) {
     return null;
 }
 function eraseCookie(name) {
-    createCookie(name,"",-1);
+    createCookie(name, '', -1);
 }
 // /cookie functions
 
 // main
 $(function(){
     // Accordion
-    $("h2.contentheader").disableSelection();
-    $("h2.menuheader").disableSelection();
-    $("#maincol.accordion")
-        .accordion({ header: "h2.contentheader", autoHeight: false, collapsible: true, animated: "easeInOutQuad", active: false })
+    $('h2.contentheader').disableSelection();
+    $('h2.menuheader').disableSelection();
+    $('#maincol.accordion')
+        .accordion({ header: 'h2.contentheader', heightStyle: 'content', collapsible: true, animate: 'easeInOutQuad', active: false })
         .disableSelection();
     $("#menu")
-        .accordion({ header: "h2.menuheader",    autoHeight: false, collapsible: true, animated: "easeInOutQuad", active: false })
+        .accordion({ header: 'h2.menuheader',    heightStyle: 'content', collapsible: true, animate: 'easeInOutQuad', active: false })
         .disableSelection();
 
     $.stylesheetInit();
     $('.styleswitch')
-        .bind('click', function(e) { $.stylesheetSwitch(this.getAttribute('rel')); return false; });
+        .bind('click', function(e) { $.stylesheetSwitch(this.getAttribute('rel')); return true; });
 });
