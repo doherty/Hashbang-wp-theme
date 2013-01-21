@@ -472,10 +472,32 @@ table#calendar_wrap {
 }
 
 blockquote {
-    border: 1px solid #AAA;
-    display: table;
-    padding: 10px 15px 10px 15px;
-    background-color: #F9F9F9;
+     background-color: #F9F9F9;
+     border: 1px solid #AAAAAA;
+     padding: 0px 2em;
+     width: 70%;
+}
+
+blockquote:before {
+     color: #7A7A7A;
+     content: "“";
+     display: block;
+     font-size: 8em;
+     left: -0.3em;
+     position: relative;
+     top: 0.25em;
+}
+
+blockquote cite {
+    color: #999999;
+    display: block;
+    text-align: right;
+    margin-right: 2em;
+    margin-bottom: 0.75em;
+}
+
+blockquote cite:before {
+    content: "— ";
 }
 
 label {
