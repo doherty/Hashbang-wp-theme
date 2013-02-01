@@ -685,6 +685,10 @@ img.alignleft {
     padding-bottom:2px;
 }
 
+.post-author {
+    border: solid 0.25em #999;
+}
+
 .gravatarside {
     float:right;
     width:80px;
@@ -694,8 +698,6 @@ img.alignleft {
 
 .avatar {
     float: right;
-    margin: 0 auto;
-    padding: 1em;
 }
 
 .wp-caption {

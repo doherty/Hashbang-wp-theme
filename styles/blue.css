@@ -224,6 +224,10 @@ label {
     color:#1A61AC;
 }
 
+.post-author {
+    border: solid 0.25em #1A61AC;
+}
+
 .wp-caption {
     border:1px solid #1A61AC;
     background-color:#A5CEEF;

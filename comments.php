@@ -7,7 +7,9 @@
 
 <?php foreach ($comments as $comment) : ?>
 
-<div class="comment clearfix" id="comment-<?php comment_ID(); ?>">
+<div class="comment clearfix<?php
+// If current post author is also comment author, make it known visually.
+echo ( $comment->user_id === $post->post_author ) ? ' post-author' : ''; ?>" id="comment-<?php comment_ID(); ?>">
 <div class="gravatarside"><?php
 if ( get_option('show_avatars') && function_exists('get_avatar') ) {
     echo get_avatar( $comment, 80, get_option('avatar_default','blank') );
