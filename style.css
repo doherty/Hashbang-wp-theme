@@ -476,6 +476,8 @@ blockquote {
      border: 1px solid #AAAAAA;
      padding: 0px 2em;
      width: 70%;
+     margin-left: auto;
+     margin-right:auto;
 }
 
 blockquote:before {
@@ -486,6 +488,10 @@ blockquote:before {
      left: -0.3em;
      position: relative;
      top: 0.25em;
+}
+
+blockquote p {
+    margin-top: 0;
 }
 
 blockquote cite {
