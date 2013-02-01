@@ -665,7 +665,8 @@ img.alignleft {
     text-decoration:none;
 }
 
-.commenticon a:hover {
+.broken_link, a.broken_link {
+	text-decoration: line-through;
 }
 
 .commenttext {
