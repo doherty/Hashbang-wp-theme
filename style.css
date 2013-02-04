@@ -646,7 +646,8 @@ img.alignleft {
     text-decoration:none;
 }
 
-.postinfotext a:hover {
+.trackable_sharing a:hover {
+    border:none !important;
 }
 
 .commentheader {

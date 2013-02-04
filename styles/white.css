@@ -1,159 +1,56 @@
 html,body {
     background-color:#FFF;
+    color: #333;
 }
 
-#header h1 {
+a {
     color:#BBB;
 }
-
-#header h1 a {
-    color:#BBB;
-}
-
-#header h1 a:hover {
+a:hover {
     color:#333;
 }
-
-#header h2 {
-    color:#888;
-}
-
-#menu {
-    color:#BBB;
-}
-
-#menu a {
-    color:#BBB;
-}
-
-#menu a:hover {
-    color:#BBB;
-}
-
-h2 {
-    color:#888;
-}
-
-h2:hover {
-    color:#333;
-}
-
-h2:active {
-    color:#333;
-}
-
-#menu ul li {
-    color:#BBB;
-}
-
-#menu ul li a {
-    color:#BBB;
-}
-
-#menu ul li a:hover {
-    color:#000;
-}
-
-#menu ul li ul li a {
-    color:#BBB;
-}
-
-#menu ul li ul li a:hover {
-    color:#000;
-}
-
-#menu ul li ul li ul li a {
-    color:#BBB;
-}
-
-#menu ul li ul li ul li a:hover {
-    color:#000;
-}
-
-#menu ul li ul li ul li ul li a {
-    color:#BBB;
-}
-
-#menu ul li ul li ul li ul li a:hover {
-    color:#000;
-}
-
-#recentcomments {
-    color:#AAA;
-}
-
-#recentcomments a {
-    color:#AAA;
-}
-
-#recentcomments a:hover {
-    color:#000;
-}
-
-#maincol h2 a {
-    color:#BBB;
-}
-
-#maincol h2 a:hover {
-    color:#333;
-}
-
-#maincol p {
-    color:#333;
-}
-
-#maincol a {
-    color:#333;
-}
-
 #maincol a:hover {
     color:#333;
     text-decoration: none;
     border-bottom: 1px #333 dashed;
 }
 
-#maincol ul {
+#header h2 {
+    color:#888;
+}
+
+h2 {
+    color:#888;
+}
+
+h2:hover, h2:active {
     color:#333;
 }
 
-#maincol ol {
-    color:#333;
-}
-
-h2.contentheader {
+#recentcomments {
     color:#AAA;
 }
 
-h2.contentheader:hover {
+#maincol a {
+    color: #333;
+}
+
+#maincol h2.contentheader a {
     color:#333;
 }
 
-h2.contentheader:active {
-    color:#333;
+#maincol h2.contentheader a:hover {
+    color:#AAA;
 }
-
-.permalink {
+#maincol h2.contentheader a:active {
     color:#AAA;
 }
 
-.permalink a {
+.permalink, .permalink a {
     color:#AAA;
 }
-
 .permalink a:hover {
     color:#333;
-}
-
-#wp-calendar {
-    color:#000;
-}
-
-#wp-calendar a {
-    color:#333;
-}
-
-#wp-calendar a:hover {
-    color:#000;
 }
 
 blockquote p {
@@ -200,42 +97,29 @@ label {
     color:#333;
 }
 
-.commentheader {
+.commentheader, .commenticon, .commenticon a {
     color:#AAA;
 }
 
-.commenticon {
-    color:#AAA;
-}
-
-.commenticon a {
-    color:#AAA;
-}
 
 .commenticon a:hover {
     color:#333;
 }
 
-.commenttext {
+.commenttext, .commenttext p {
     color:#AAA;
 }
 
-.commenttext p {
-    color:#AAA;
-}
 
 .wp-caption {
     border:1px solid #ddd;
     background-color:#f3f3f3;
 }
 
-.navigation {
+.navigation, .navigation a {
     color:#AAA;
 }
 
-.navigation a {
-    color:#AAA;
-}
 
 .navigation a:hover {
     color:#333;

@@ -1,142 +1,44 @@
 html,body {
-    background-color:#000;
+    background-color:#0F0F0F;
+    color: #CCC;
 }
 
-#header h1 {
-    color:#CCC;
+a {
+    color: #CCC;
 }
-
-#header h1 a {
-    color:#CCC;
-}
-
-#header h1 a:hover {
+a:hover {
     color:#FFF;
 }
-
-#header h2 {
-    color:#DDD;
-}
-
-#menu {
-    color:#CCC;
-}
-
-#menu a {
-    color:#CCC;
-}
-
-#menu a:hover {
-    color:#CCC;
-}
-
-h2 {
-    color:#DDD;
-}
-
-h2:hover {
-    color:#FFF;
-}
-
-h2:active {
-    color:#FFF;
-}
-
-#menu ul li {
-    color:#999;
-}
-
-#menu ul li a {
-    color:#999;
-}
-
-#menu ul li a:hover {
-    color:#FFF;
-}
-
-#menu ul li ul li a {
-    color:#999;
-}
-
-#menu ul li ul li a:hover {
-    color:#FFF;
-}
-
-#menu ul li ul li ul li a {
-    color:#999;
-}
-
-#menu ul li ul li ul li a:hover {
-    color:#FFF;
-}
-
-#menu ul li ul li ul li ul li a {
-    color:#999;
-}
-
-#menu ul li ul li ul li ul li a:hover {
-    color:#FFF;
-}
-
-#recentcomments {
-    color:#999;
-}
-
-#recentcomments a {
-    color:#999;
-}
-
-#recentcomments a:hover {
-    color:#FFF;
-}
-
-#maincol h2 a {
-    color:#FFF;
-}
-
-#maincol h2 a:hover {
-    color:#CCC;
-}
-
-#maincol p {
-    color:#FFF;
-}
-
-#maincol a {
-    color:#FFF;
-}
-
 #maincol a:hover {
     color:#FFF;
     text-decoration: none;
     border-bottom: 1px #FFF dashed;
 }
 
-#maincol ul {
+#menu a {
     color:#FFF;
 }
-
-#maincol ol {
-    color:#FFF;
-}
-
-h2.contentheader {
-    color:#FFF;
-}
-
-h2.contentheader:hover {
+#menu a:hover {
     color:#CCC;
 }
 
-h2.contentheader:active {
-    color:#CCC;
+h2:hover, h2:active {
+    color:#FFF;
 }
 
-.permalink {
-    color:#CCC;
+#recentcomments {
+    color:#FFF;
 }
 
-.permalink a {
+h2.contentheader a {
+    color: #FFF;
+}
+
+h2.contentheader a:hover {
+    color: #CCC !important;
+}
+
+.permalink, .permalink a {
     color:#CCC;
 }
 
@@ -144,33 +46,21 @@ h2.contentheader:active {
     color:#FFF;
 }
 
-#wp-calendar {
-    color:#CCC;
-}
-
-#wp-calendar a {
-    color:#FFF;
-}
-
-#wp-calendar a:hover {
-    color:#CCC;
-}
-
 blockquote p {
-    color:#555 !important;
+    color:#555;
 }
 
 label {
     color:#FFF;
 }
 
-#s,#submit {
+#s, #submit {
     background-color:#000;
     border:1px solid #CCC;
     color:#505050;
 }
 
-#author,#email,#url,#comment {
+#author, #email, #url, #comment {
     border:1px solid #CCC;
 }
 
@@ -200,15 +90,7 @@ label {
     color:#FFF;
 }
 
-.commentheader {
-    color:#CCC;
-}
-
-.commenticon {
-    color:#CCC;
-}
-
-.commenticon a {
+.commentheader, .commenticon, .commenticon a {
     color:#CCC;
 }
 
@@ -216,12 +98,8 @@ label {
     color:#FFF;
 }
 
-.commenttext {
-    color:#CCC;
-}
-
-.commenttext p {
-    color:#CCC;
+.commenttext, .commenttext p {
+    color:#FFF;
 }
 
 .wp-caption {
@@ -229,11 +107,7 @@ label {
     background-color:#000;
 }
 
-.navigation {
-    color:#CCC;
-}
-
-.navigation a {
+.navigation, .navigation a {
     color:#CCC;
 }
 

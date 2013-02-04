@@ -1,162 +1,48 @@
 html,body {
     background-color:#AFAFAF;
+    color: #515151;
 }
 
-#header h1 {
-    color:#898989;
-}
-
-#header h1 a {
-    color:#898989;
-}
-
-#header h1 a:hover {
-    color:#F6F6F6;
-}
-
-#header h2 {
+a {
     color:#515151;
 }
-
-#menu {
-    color:#515151;
+a:hover{
+    color: #f6f6f6;
 }
-
-#menu a {
-    color:#515151;
-}
-
-#menu a:hover {
-    color:#515151;
-}
-
-h2 {
-    color:#515151;
-}
-
-h2:hover {
-    color:#F6F6F6;
-}
-
-h2:active {
-    color:#515151;
-}
-
-#menu ul li {
-    color:#F6F6F6;
-}
-
-#menu ul li a {
-    color:#F6F6F6;
-}
-
-#menu ul li a:hover {
-    color:#515151;
-}
-
-#menu ul li ul li a {
-    color:#F6F6F6;
-}
-
-#menu ul li ul li a:hover {
-    color:#515151;
-}
-
-#menu ul li ul li ul li a {
-    color:#F6F6F6;
-}
-
-#menu ul li ul li ul li a:hover {
-    color:#515151;
-}
-
-#menu ul li ul li ul li ul li a {
-    color:#F6F6F6;
-}
-
-#menu ul li ul li ul li ul li a:hover {
-    color:#515151;
-}
-
-#recentcomments {
-    color:#F6F6F6;
-}
-
-#recentcomments a {
-    color:#F6F6F6;
-}
-
-#recentcomments a:hover {
-    color:#515151;
-}
-
-#maincol {
-    color:#515151;
-}
-
-#maincol h2 a {
-    color:#F6F6F6;
-}
-
-#maincol h2 a:hover {
-    color:#515151;
-}
-
-#maincol p {
-    color:#515151;
-}
-
-#maincol a {
-    color:#515151;
-}
-
 #maincol a:hover {
     color:#F6F6F6;
     text-decoration: none;
     border-bottom: 1px #F6F6F6 dashed;
 }
 
-#maincol ul {
+h2.contentheader a {
+    color: #f6f6f6;
+}
+h2.contentheader a:hover {
+    color: #515151;
+    border:none;
+}
+
+h2 {
     color:#515151;
 }
 
-#maincol ol {
-    color:#515151;
-}
-
-h2.contentheader {
+h2:hover, h2:active {
     color:#F6F6F6;
 }
 
-h2.contentheader:hover {
-    color:#515151;
-}
 
-h2.contentheader:active {
-    color:#515151;
+#menu, #menu a, #menu li, #menu li a {
+    color:#898989;
 }
-
-.permalink {
+#menu a:hover, #menu li a:hover {
     color:#F6F6F6;
 }
 
-.permalink a {
+.permalink, .permalink a {
     color:#F6F6F6;
 }
-
 .permalink a:hover {
-    color:#515151;
-}
-
-#wp-calendar {
-    color:#F6F6F6;
-}
-
-#wp-calendar a {
-    color:#515151;
-}
-
-#wp-calendar a:hover {
     color:#515151;
 }
 
@@ -168,13 +54,13 @@ label {
     color:#515151;
 }
 
-#s,#submit {
+#s, #submit {
     background-color:#CFCFCF;
     border:1px solid #515151;
     color:#505050;
 }
 
-#author,#email,#url,#comment {
+#author, #email #url, #comment {
     border:1px solid #515151;
 }
 
@@ -195,36 +81,21 @@ label {
     border-top:1px dashed #515151;
     border-bottom:1px dashed #515151;
 }
-
 .postinfotext a {
     color:#515151;
 }
-
 .postinfotext a:hover {
     color:#515151;
 }
 
-.commentheader {
+.commentheader, .commenticon, .commenticon a {
     color:#515151;
 }
-
-.commenticon {
-    color:#515151;
-}
-
-.commenticon a {
-    color:#515151;
-}
-
 .commenticon a:hover {
     color:#333;
 }
 
-.commenttext {
-    color:#515151;
-}
-
-.commenttext p {
+.commenttext, .commenttext p {
     color:#515151;
 }
 
@@ -237,14 +108,9 @@ label {
     background-color:#CFCFCF;
 }
 
-.navigation {
+.navigation, .navigation a {
     color:#515151;
 }
-
-.navigation a {
-    color:#515151;
-}
-
 .navigation a:hover {
     color:#515151;
 }

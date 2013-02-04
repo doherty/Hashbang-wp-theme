@@ -1,25 +1,18 @@
 html,body {
     background-color:#97D94F;
+    color: #436A17;
 }
 
-#header h1 {
-    color:#66A323;
-}
-
-#header h1 a {
-    color:#66A323;
-}
-
-#header h1 a:hover {
-    color:#EAF8DA;
-}
-
-#header h2 {
+a {
     color:#436A17;
 }
 
-#menu {
-    color:#66A323;
+a:hover {
+    color:#EAF8DA;
+}
+
+h2:hover, h2:active {
+    color:#EAF8DA;
 }
 
 #menu a {
@@ -27,67 +20,15 @@ html,body {
 }
 
 #menu a:hover {
+    color:#EAF8DA;
+}
+
+#recentcomments, #recentcomments a {
     color:#66A323;
-}
-
-h2 {
-    color:#436A17;
-}
-
-h2:hover {
-    color:#EAF8DA;
-}
-
-h2:active {
-    color:#436A17;
-}
-
-#menu ul li {
-    color:#EAF8DA;
-}
-
-#menu ul li a {
-    color:#EAF8DA;
-}
-
-#menu ul li a:hover {
-    color:#66A323;
-}
-
-#menu ul li ul li a {
-    color:#EAF8DA;
-}
-
-#menu ul li ul li a:hover {
-    color:#66A323;
-}
-
-#menu ul li ul li ul li a {
-    color:#EAF8DA;
-}
-
-#menu ul li ul li ul li a:hover {
-    color:#66A323;
-}
-
-#menu ul li ul li ul li ul li a {
-    color:#EAF8DA;
-}
-
-#menu ul li ul li ul li ul li a:hover {
-    color:#66A323;
-}
-
-#recentcomments {
-    color:#EAF8DA;
-}
-
-#recentcomments a {
-    color:#EAF8DA;
 }
 
 #recentcomments a:hover {
-    color:#66A323;
+    color:#EAF8DA;
 }
 
 #maincol h2 a {
@@ -102,57 +43,17 @@ h2:active {
     color:#436A17;
 }
 
-#maincol a {
-    color:#436A17;
-}
-
 #maincol a:hover {
     color:#EAF8DA;
     text-decoration: none;
     border-bottom: 1px #EAF8DA dashed;
 }
 
-#maincol ul {
-    color:#436A17;
-}
-
-#maincol ol {
-    color:#436A17;
-}
-
-h2.contentheader {
-    color:#EAF8DA;
-}
-
-h2.contentheader:hover {
-    color:#66A323;
-}
-
-h2.contentheader:active {
-    color:#66A323;
-}
-
-.permalink {
-    color:#EAF8DA;
-}
-
-.permalink a {
+.permalink, .permalink a {
     color:#EAF8DA;
 }
 
 .permalink a:hover {
-    color:#66A323;
-}
-
-#wp-calendar {
-    color:#EAF8DA;
-}
-
-#wp-calendar a {
-    color:#66A323;
-}
-
-#wp-calendar a:hover {
     color:#66A323;
 }
 
@@ -200,15 +101,7 @@ label {
     color:#66A323;
 }
 
-.commentheader {
-    color:#66A323;
-}
-
-.commenticon {
-    color:#66A323;
-}
-
-.commenticon a {
+.commentheader, .commenticon, .commenticon a {
     color:#66A323;
 }
 
@@ -216,11 +109,7 @@ label {
     color:#436A17;
 }
 
-.commenttext {
-    color:#66A323;
-}
-
-.commenttext p {
+.commenttext, .commenttext p {
     color:#66A323;
 }
 
@@ -229,11 +118,7 @@ label {
     background-color:#97D94F;
 }
 
-.navigation {
-    color:#66A323;
-}
-
-.navigation a {
+.navigation, .navigation a {
     color:#66A323;
 }
 

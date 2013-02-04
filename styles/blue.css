@@ -1,21 +1,26 @@
 html,body {
     background-color:#A5CEEF;
+    color: #1A61AC;
 }
 
-#header h1 {
+a {
     color:#1A61AC;
 }
-
-#header h1 a {
-    color:#1A61AC;
-}
-
-#header h1 a:hover {
+a:hover {
     color:#144670;
 }
+#maincol a:hover {
+    color:#144670;
+    text-decoration: none;
+    border-bottom: 1px #144670 dashed;
+}
 
-#header h2 {
-    color:#1C6097;
+
+h2 {
+    color:#1A61AC;
+}
+h2:hover {
+    color: #144670;
 }
 
 #menu {
@@ -23,58 +28,9 @@ html,body {
 }
 
 #menu a {
-    color:#1A61AC;
+    color: #EAF3FB;
 }
-
 #menu a:hover {
-    color:#1A61AC;
-}
-
-h2 {
-    color:#1A61AC;
-}
-
-h2:hover {
-    color:#144670;
-}
-
-h2:active {
-    color:#144670;
-}
-
-#menu ul li {
-    color:#EAF3FB;
-}
-
-#menu ul li a {
-    color:#EAF3FB;
-}
-
-#menu ul li a:hover {
-    color:#1A61AC;
-}
-
-#menu ul li ul li a {
-    color:#EAF3FB;
-}
-
-#menu ul li ul li a:hover {
-    color:#1A61AC;
-}
-
-#menu ul li ul li ul li a {
-    color:#EAF3FB;
-}
-
-#menu ul li ul li ul li a:hover {
-    color:#1A61AC;
-}
-
-#menu ul li ul li ul li ul li a {
-    color:#EAF3FB;
-}
-
-#menu ul li ul li ul li ul li a:hover {
     color:#1A61AC;
 }
 
@@ -82,77 +38,24 @@ h2:active {
     color:#EAF3FB;
 }
 
-#recentcomments a {
-    color:#EAF3FB;
-}
-
 #recentcomments a:hover {
     color:#1A61AC;
 }
 
-#maincol h2 a {
+h2.contentheader a {
     color:#EAF3FB;
 }
 
-#maincol h2 a:hover {
+h2.contentheader a:hover,
+h2.contentheader a:active {
     color:#1A61AC;
 }
 
-#maincol p {
-    color:#1A61AC;
-}
-
-#maincol a {
-    color:#1A61AC;
-}
-
-#maincol a:hover {
-    color:#144670;
-    text-decoration: none;
-    border-bottom: 1px #144670 dashed;
-}
-
-#maincol ul {
-    color:#1A61AC;
-}
-
-#maincol ol {
-    color:#1A61AC;
-}
-
-h2.contentheader {
-    color:#EAF3FB;
-}
-
-h2.contentheader:hover {
-    color:#1A61AC;
-}
-
-h2.contentheader:active {
-    color:#1A61AC;
-}
-
-.permalink {
-    color:#EAF3FB;
-}
-
-.permalink a {
+.permalink, .permalink a {
     color:#EAF3FB;
 }
 
 .permalink a:hover {
-    color:#1A61AC;
-}
-
-#wp-calendar {
-    color:#EAF3FB;
-}
-
-#wp-calendar a {
-    color:#1A61AC;
-}
-
-#wp-calendar a:hover {
     color:#1A61AC;
 }
 
@@ -164,13 +67,13 @@ label {
     color:#1A61AC;
 }
 
-#s,#submit {
+#s, #submit {
     background-color:#A5CEEF;
     border:1px solid #1A61AC;
     color:#505050;
 }
 
-#author,#email,#url,#comment {
+#author, #email, #url, #comment {
     border:1px solid #1A61AC;
 }
 
@@ -195,32 +98,18 @@ label {
 .postinfotext a {
     color:#1A61AC;
 }
-
 .postinfotext a:hover {
     color:#144670;
 }
 
-.commentheader {
+.commentheader, .commenticon, .commenticon a {
     color:#1A61AC;
 }
-
-.commenticon {
-    color:#1A61AC;
-}
-
-.commenticon a {
-    color:#1A61AC;
-}
-
 .commenticon a:hover {
     color:#144670;
 }
 
-.commenttext {
-    color:#1A61AC;
-}
-
-.commenttext p {
+.commenttext, .commenttext p {
     color:#1A61AC;
 }
 
@@ -233,14 +122,9 @@ label {
     background-color:#A5CEEF;
 }
 
-.navigation {
+.navigation, .navigation a {
     color:#1A61AC;
 }
-
-.navigation a {
-    color:#1A61AC;
-}
-
 .navigation a:hover {
     color:#EAF3FB;
 }
