@@ -75,6 +75,5 @@ $(function(){
         .disableSelection();
 
     $.stylesheetInit();
-    $('.styleswitch')
-        .bind('click', function(e) { $.stylesheetSwitch(this.getAttribute('rel')); return true; });
+    $('.styleswitch').click(function() { $.stylesheetSwitch(this.getAttribute('title')); });
 });

@@ -6,7 +6,7 @@ html,body {
 a {
     color: #CCC;
 }
-a:hover {
+a:hover, .styleswitch:hover {
     color:#FFF;
 }
 #maincol a:hover {

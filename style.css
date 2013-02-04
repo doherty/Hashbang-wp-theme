@@ -805,6 +805,10 @@ img.alignleft {
     clear: both;
 }
 
+.styleswitch {
+    cursor: pointer;
+}
+
 /* End hide from IE-mac */
 /*printer styles*/
 @media print {

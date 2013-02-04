@@ -6,11 +6,11 @@
 <h2 class="menuheader">Customise</h2>
 <div class="menucontent">
 <ul>
-<li><a href="#" class="styleswitch" rel="white">White</a></li>
-<li><a href="#" class="styleswitch" rel="black">Black</a></li>
-<li><a href="#" class="styleswitch" rel="blue">Blue</a></li>
-<li><a href="#" class="styleswitch" rel="green">Green</a></li>
-<li><a href="#" class="styleswitch" rel="grey">Grey</a></li>
+<li><span class="styleswitch" title="white">White</span></li>
+<li><span class="styleswitch" title="black">Black</span></li>
+<li><span class="styleswitch" title="blue">Blue</span></li>
+<li><span class="styleswitch" title="green">Green</span></li>
+<li><span class="styleswitch" title="grey">Grey</span></li>
 </ul>
 </div>
 

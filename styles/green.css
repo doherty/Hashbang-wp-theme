@@ -6,8 +6,7 @@ html,body {
 a {
     color:#436A17;
 }
-
-a:hover {
+a:hover, .styleswitch:hover {
     color:#EAF8DA;
 }
 
