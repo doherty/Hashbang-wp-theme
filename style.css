@@ -39,6 +39,10 @@ html,body {
     position: relative;
 }
 
+#profile-body {
+    text-align:justify;
+}
+
 #wrapper {
     padding: 0 0 1em 0;
 }
@@ -523,6 +527,11 @@ code {
     margin:5px 0 15px;
 }
 
+.inline-code {
+    margin: 0;
+    font-family: monospace;
+}
+
 #respond {
     font-weight: 500;
 }
@@ -698,6 +707,10 @@ img.alignleft {
 
 .avatar {
     float: right;
+}
+
+#profile-avatar > img {
+    padding: 1em;
 }
 
 .wp-caption {
