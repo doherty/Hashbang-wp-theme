@@ -117,3 +117,8 @@ label {
 
 .copyright, .copyright a {
     color: #222;
+}
+
+.wp-geshi-highlight, code {
+    color: #555;
+}
