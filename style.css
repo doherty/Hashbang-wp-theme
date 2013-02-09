@@ -30,41 +30,30 @@ html,body {
 }
 
 #page {
-    width: 900px;
+    width: 80%;
     text-align: left;
     margin-left: auto;
     margin-right: auto;
-    height: auto !important;
     min-height: 100%;
     position: relative;
 }
 
 #profile-body {
-    text-align:justify;
+    text-align: justify;
 }
 
 #wrapper {
-    padding: 0 0 1em 0;
+    padding-bottom: 1em;
 }
 
 #header {
-    position:relative;
-    width:100%;
-    padding: 25px 5px 0 0;
-    height:50px;
+    height: 5em;
+    margin-left: 26.9%;
     overflow-x:hidden;
-}
-
-#header h1 {
-    position:relative;
-    float:left;
-    margin:0 0 0 250px;
-    width:650px;
-    padding:0;
-    font-family:JunctionRegular, arial, sans-serif;
-    font-weight: 500;
-    font-size:20px;
-    text-transform:uppercase;
+    padding: 0;
+    padding-top: 2em;
+    text-transform: uppercase;
+    width: 73%;
 }
 
 #header h1 a {
@@ -75,50 +64,25 @@ html,body {
     text-decoration:none;
 }
 
-#header h2 {
-    position:relative;
-    float:left;
-    clear:left;
-    margin:0 0 0 250px;
-    width:650px;
-    padding:0;
-    font-family:JunctionRegular, arial, sans-serif;
-    font-weight: 500;
-    font-size:14px;
-    text-transform:uppercase;
-}
-
 #leftcol {
-    width:230px;
-    float:left;
-    position:relative;
-    padding:0 20px 0 0;
-    text-align:right;
+    width: 25%;
+    float: left;
+    padding-right: 0.5em;
     overflow-x:hidden;
 }
 
 #menu {
     margin:0;
     text-align:right;
-    font-weight: 500;
-    font-family:JunctionRegular, arial, sans-serif;
     text-transform:uppercase;
     font-size:14px;
 }
 
 #menu a {
-    font-weight: 500;
-    font-family:JunctionRegular, arial, sans-serif;
-    text-transform:uppercase;
-    font-size:14px;
     text-decoration:none;
 }
 
 #menu a:hover {
-    font-weight: 500;
-    font-family:JunctionRegular, arial, sans-serif;
-    text-transform:uppercase;
-    font-size:14px;
     text-decoration:none;
 }
 
@@ -134,143 +98,27 @@ h2.menuheader {
 }
 
 #menu ul {
-    padding:2px 0;
     margin:0;
     list-style:none;
-    width:230px;
+    width: 92%;
     clear:left;
     float:right;
+    line-height: 200%;
 }
 
-#menu ul li {
-    margin:0;
-    display:block;
-    font-weight: 500;
-    font-family:JunctionRegular, arial, sans-serif;
-    text-transform:uppercase;
-    font-size:14px;
-    padding:5px 0 5px 5px;
-}
-
-#menu ul li a {
-    width:225px;
-    display:block;
-    text-decoration:none;
-    font-weight: 500;
-    font-family:JunctionRegular, arial, sans-serif;
-    text-transform:uppercase;
-    font-size:14px;
-    margin:0;
-    vertical-align:bottom;
-}
-
-#menu ul li a:hover {
-    text-decoration:none;
-}
-
-#menu ul li ul {
-    padding:2px 0;
-    margin:0;
-    list-style:none;
-    clear:left;
-}
-
-#menu ul li ul li {
-    margin:0;
-    display:block;
-}
-
-#menu ul li ul li a {
-    width:205px;
-    display:block;
-    padding:5px 20px 5px 5px;
-    text-decoration:none;
-    font-weight: 500;
-    font-family:JunctionRegular, arial, sans-serif;
-    text-transform:uppercase;
-    font-size:14px;
-    margin:0;
-    vertical-align:bottom;
-}
-
-#menu ul li ul li a:hover {
-    text-decoration:none;
-}
-
-#menu ul li ul li ul {
-    padding:2px 0;
-    margin:0;
-    list-style:none;
-    clear:left;
-}
-
-#menu ul li ul li ul li {
-    margin:0;
-    display:block;
-}
-
-#menu ul li ul li ul li a {
-    width:185px;
-    padding:5px 40px 5px 5px;
-    display:block;
-    text-decoration:none;
-    font-weight: 500;
-    font-family:JunctionRegular, arial, sans-serif;
-    text-transform:uppercase;
-    font-size:14px;
-    margin:0;
-    vertical-align:bottom;
-}
-
-#menu ul li ul li ul li a:hover {
-    text-decoration:none;
-}
-
-#menu ul li ul li ul li ul {
-    padding:2px 0;
-    margin:0;
-    list-style:none;
-    clear:left;
-}
-
-#menu ul li ul li ul li ul li {
-    margin:0;
-    display:block;
-}
-
-#menu ul li ul li ul li ul li a {
-    width:165px;
-    padding:5px 60px 5px 5px;
-    display:block;
-    text-decoration:none;
-    font-weight: 500;
-    font-family:JunctionRegular, arial, sans-serif;
-    text-transform:uppercase;
-    font-size:14px;
-    margin:0;
-    vertical-align:bottom;
-}
-
-#menu ul li ul li ul li ul li a:hover {
-    text-decoration:none;
+#menu li {
+    padding-right: 2em;
 }
 
 ul#recentcomments {
-    padding:2px 0;
-    margin:0;
+    margin: 1em 0;
     list-style:none;
-    width:230px;
-    clear:left;
-    float:right;
+    line-height: 125%;
 }
 
-ul#recentcomments li {
-    margin:0;
-    display:block;
-    font-weight: 500;
-    font-family:JunctionRegular, arial, sans-serif;
-    text-transform:uppercase;
-    font-size:14px;
+#recentcomments li.recentcomments {
+    padding: 0;
+    margin-bottom: 1em;
 }
 
 ul#recentcomments li a {
@@ -278,43 +126,15 @@ ul#recentcomments li a {
     display:block;
     padding:5px 0 5px 5px;
     text-decoration:none;
-    font-weight: 500;
-    font-family:JunctionRegular, arial, sans-serif;
     text-transform:uppercase;
     font-size:14px;
     margin:0;
     vertical-align:bottom;
 }
 
-ul#recentcomments li a:hover {
-    text-decoration:none;
-}
-
-#recentcomments a {
-    text-decoration:none;
-    font-weight: 500;
-    font-family:JunctionRegular, arial, sans-serif;
-    text-transform:uppercase;
-    font-size:14px;
-}
-
-#recentcomments a:hover {
-    text-decoration:none;
-    font-weight: 500;
-    font-family:JunctionRegular, arial, sans-serif;
-    text-transform:uppercase;
-    font-size:14px;
-}
-
 #maincol {
-    float:right;
-    display:inline;
-    position:relative;
-    width:650px;
-    font-family:JunctionRegular, verdana, sans-serif;
-    font-size:13px;
-/*    overflow-x:hidden;*/
-    text-align:left;
+    float: right;
+    width: 73%;
     line-height: 1.7em;
     margin-bottom: 1em;
 }
@@ -322,22 +142,10 @@ ul#recentcomments li a:hover {
 #maincol h1 {
     margin:0;
     padding:0;
-    font-family:JunctionRegular, arial, sans-serif;
     font-weight: 500;
     font-size:22px;
     text-transform:uppercase;
     clear:both;
-}
-
-#maincol h2 {
-    margin:0;
-    padding:0;
-    font-family:JunctionRegular, arial, sans-serif;
-    font-weight: 500;
-    font-size:20px;
-    text-transform:uppercase;
-    clear:both;
-    outline: 0;
 }
 
 #maincol h2 a {
@@ -347,7 +155,6 @@ ul#recentcomments li a:hover {
 #maincol h3 {
     margin:0;
     padding:0;
-    font-family:JunctionRegular, arial, sans-serif;
     font-weight: 500;
     font-size:18px;
     text-transform:uppercase;
