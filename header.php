@@ -63,8 +63,8 @@ else {
 
 <?php wp_head(); ?>
 
-<script type="text/javascript" src="<?php bloginfo('stylesheet_directory'); ?>/scripts/jquery-1.8.3.min.js"></script>
-<script type="text/javascript" src="<?php bloginfo('stylesheet_directory'); ?>/scripts/jquery-ui-1.9.2.custom.min.js"></script>
+<script type="text/javascript" src="<?php bloginfo('stylesheet_directory'); ?>/scripts/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="<?php bloginfo('stylesheet_directory'); ?>/scripts/jquery-ui-1.10.1.custom.min.js"></script>
 <script type="text/javascript" src="<?php bloginfo('stylesheet_directory'); ?>/scripts/main.js"></script>
 
 <link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="<?php bloginfo('rss2_url'); ?>" />
