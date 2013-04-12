@@ -1,35 +1,13 @@
-/**
-* Stylesheet toggle variation on styleswitch stylesheet switcher.
-* Built on jQuery.
-* Under an CC Attribution, Share Alike License.
-* By Kelvin Luck ( http://www.kelvinluck.com/ )
-**/
 (function($) {
-    // Local vars for toggle
-    var availableStylesheets = [];
-    var activeStylesheetIndex = 0;
-
-    // To switch to a specific named stylesheet
-    $.stylesheetSwitch = function(styleName) {
-        $('link[rel~="stylesheet"][title]').each(
-            function(i) {
-                this.disabled = true;
-                if (this.getAttribute('title') == styleName) {
-                    this.disabled = false;
-                    activeStylesheetIndex = i;
-                }
-            }
-        );
-        createCookie('style', styleName, 365);
+    $.stylesheetSwitch = function(style_name) {
+        $('#skin').attr('href', function(i, old) {
+            return old.replace( /\/\w+\.css$/, '/' + style_name + '.css' );
+        });
+        createCookie('style', style_name, 365);
     };
 
-    // To initialise the stylesheet
+    // To remember your last selection
     $.stylesheetInit = function() {
-        $('link[rel~="stylesheet"][title]').each(
-            function(i) {
-                availableStylesheets.push(this.getAttribute('title'));
-            }
-        );
         var c = readCookie('style');
         if (c) {
             $.stylesheetSwitch(c);
@@ -75,7 +53,7 @@ $(function(){
         .disableSelection();
 
     $.stylesheetInit();
-    $('.styleswitch').click(function() { $.stylesheetSwitch(this.getAttribute('title')); });
+    $('.styleswitch').on('click', function() { $.stylesheetSwitch(this.getAttribute('title')); });
 
     var today = new Date();
     if (today.getMonth() == 3 && today.getDate() == 1 ) {

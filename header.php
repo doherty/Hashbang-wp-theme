@@ -54,11 +54,7 @@ else {
 ?>" />
 
 <link rel="stylesheet" type="text/css" href="<?php           echo get_stylesheet_directory_uri(); ?>/style.min.css"                  />
-<link rel="stylesheet" type="text/css" href="<?php           echo get_stylesheet_directory_uri(); ?>/styles/white.css" title="white" />
-<link rel="alternate stylesheet" type="text/css" href="<?php echo get_stylesheet_directory_uri(); ?>/styles/black.css" title="black" />
-<link rel="alternate stylesheet" type="text/css" href="<?php echo get_stylesheet_directory_uri(); ?>/styles/blue.css"  title="blue"  />
-<link rel="alternate stylesheet" type="text/css" href="<?php echo get_stylesheet_directory_uri(); ?>/styles/green.css" title="green" />
-<link rel="alternate stylesheet" type="text/css" href="<?php echo get_stylesheet_directory_uri(); ?>/styles/grey.css"  title="grey"  />
+<link rel="stylesheet" type="text/css" href="<?php           echo get_stylesheet_directory_uri(); ?>/styles/white.css" id="skin" />
 
 <?php wp_head(); ?>
 
