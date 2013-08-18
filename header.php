@@ -66,6 +66,7 @@ else {
 <link rel="alternate" type="application/rss+xml" title="all comments - RSS 2.0" href="<?php bloginfo('comments_rss2_url'); ?>" />
 <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
 <link rel="shortcut icon" href="/favicon.ico" />
+<link rel="author" href="https://plus.google.com/u/0/101186227351780847596"/>
 </head>
 
 <body>
