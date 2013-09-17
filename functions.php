@@ -37,3 +37,18 @@ function hashbang_jquery_scripts() {
 }
 
 add_action( 'wp_enqueue_scripts', 'hashbang_jquery_scripts' );
+
+function excerpt_stripped ($excerpt) { return wp_strip_all_tags($excerpt); }
+
+function meta_description ($post) {
+    $description = $post->post_title;
+
+    $extra = $post->post_content;
+    $extra = strip_shortcodes( $extra );
+    $extra = str_replace(']]>', ']]&gt;', $extra);
+    $extra = wp_strip_all_tags($extra);
+    $extra = wp_trim_words( $extra, 50, '' );
+    if ($extra) { $description .= ' ' . $extra; }
+
+    return $description;
+}

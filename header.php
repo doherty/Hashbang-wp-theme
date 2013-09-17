@@ -1,60 +1,59 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
-<title>
+<meta http-equiv="content-type" content="text/html; charset=<?php bloginfo('charset'); ?>" />
 <?php
+$blog_keywords = implode(' ', get_terms( 'post_tag',
+    array( 'orderby' => 'count', 'order' => 'DESC', 'number' => 20, fields => 'names' )
+));
+
 if ( is_front_page() || is_home() ) {
-    echo bloginfo('description');
+    $title_text = get_bloginfo('description') . ' &raquo ' . get_bloginfo('name');
+    $desc_text  = get_bloginfo('description') .   ' - '    . get_bloginfo('name');
+    $keywords   = $blog_keywords;
 }
 elseif ( is_single() || is_page() ) {
-    echo wp_title('');
+    $title_text = wp_title('', false) . ' &raquo ' . get_bloginfo('name');
+    $desc_text  = meta_description($post);
+    $cb = function($tag){ return $tag->name; };
+    $keywords   = implode(' ', array_map(
+        $cb,
+        get_the_tags($post->ID)
+    ));
 }
 elseif (is_404()) {
-    echo '404 Not Found';
+    $title_text = '404 Not Found';
 }
 elseif (is_category()) {
-    echo 'Category: '; wp_title('');
+    $title_text = 'Category: ' . wp_title('', false);
+    $desc_text  = wp_title('');
 }
 elseif (is_search()) {
-    echo 'Search Results: '; the_search_query();
+    $title_text = 'Search Results: ' . get_search_query();
+    $desc_text  = get_search_query();
 }
 elseif ( is_day() || is_month() || is_year() ) {
-    echo 'Archives: '; wp_title('');
+    $title_text = 'Archives: ' . wp_title('', false);
 }
 else {
-    echo wp_title('');
-} ?> &raquo; <?php bloginfo('name'); ?>
-</title>
-
-<meta http-equiv="content-type" content="text/html; charset=<?php bloginfo('charset'); ?>" />
-<meta name="description" content="<?php
-if ( is_single() ) {
-    single_post_title('', true);
-}
-else {
-    bloginfo('name'); ?> - <?php bloginfo('description');
-}
+    $title_text = wp_title('', false);
+    $desc_text  = wp_title('', false);
+} ?>
+<title><?php echo $title_text
+    ? $title_text
+    : get_bloginfo('name') . ' &raquo; ' . get_bloginfo('description')
+?></title>
+<meta name="description" content="<?php echo $desc_text
+    ? $desc_text
+    : get_bloginfo('name') . ' - ' . get_bloginfo('description')
 ?>" />
-<meta name="keywords" content="<?php
-if ( is_single() ) {
-    $post = $wp_query->post;
-    $tags = get_the_tags($post->ID);
-    if ($tags) {
-        foreach ($tags as $tag) {
-            echo $tag->name . ' ';
-        }
-    }
-    else {
-        bloginfo('name'); ?> - <?php bloginfo('description');
-    }
-}
-else {
-    bloginfo('name'); ?> - <?php bloginfo('description');
-}
+<meta name="keywords" content="<?php echo $keywords
+    ? $keywords
+    : $blog_keywords
 ?>" />
 
-<link rel="stylesheet" type="text/css" href="<?php           echo get_stylesheet_directory_uri(); ?>/style.min.css"                  />
-<link rel="stylesheet" type="text/css" href="<?php           echo get_stylesheet_directory_uri(); ?>/styles/white.css" id="skin" />
+<link rel="stylesheet" type="text/css" href="<?php echo get_stylesheet_directory_uri(); ?>/style.min.css"                  />
+<link rel="stylesheet" type="text/css" href="<?php echo get_stylesheet_directory_uri(); ?>/styles/white.css" id="skin" />
 
 <?php wp_head(); ?>
 
