@@ -137,6 +137,7 @@ ul#recentcomments li a {
     width: 73%;
     line-height: 1.7em;
     margin-bottom: 1em;
+    text-align: justify;
 }
 
 #maincol h1 {
