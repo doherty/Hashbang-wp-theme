@@ -26,7 +26,7 @@ elseif (is_404()) {
 }
 elseif (is_category()) {
     $title_text = 'Category: ' . wp_title('', false);
-    $desc_text  = wp_title('');
+    $desc_text  = wp_title('', false);
 }
 elseif (is_search()) {
     $title_text = 'Search Results: ' . get_search_query();
