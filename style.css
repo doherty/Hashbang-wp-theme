@@ -11,11 +11,11 @@ Tags: two-columns, white, black, blue, green, silver, fixed-width, left-sidebar
 @font-face {
     font-family: 'JunctionRegular';
     src: url('/wp-content/themes/hashbang/fonts/junction_02-webfont.eot');
-    src: url('/wp-content/themes/hashbang/fonts/junction_02-webfont.eot?#iefix') format('embedded-opentype'),
-         url('/wp-content/themes/hashbang/fonts/junction_02-webfont.woff') format('woff'),
-         url('/wp-content/themes/hashbang/fonts/junction_02-webfont.ttf') format('truetype'),
-         url('/wp-content/themes/hashbang/fonts/junction_02-webfont.svg#JunctionRegular') format('svg'),
-         url('/wp-content/themes/hashbang/fonts/junction_02-webfont.otf') format('otf');
+    src: url('/wp-content/themes/hashbang/fonts/junction_02-webfont.eot?#iefix')            format('embedded-opentype'),
+         url('/wp-content/themes/hashbang/fonts/junction_02-webfont.woff')                  format('woff'),
+         url('/wp-content/themes/hashbang/fonts/junction_02-webfont.ttf')                   format('truetype'),
+         url('/wp-content/themes/hashbang/fonts/junction_02-webfont.svg#JunctionRegular')   format('svg'),
+         url('/wp-content/themes/hashbang/fonts/junction_02-webfont.otf')                   format('otf');
     font-weight: normal;
     font-style: normal;
 }
