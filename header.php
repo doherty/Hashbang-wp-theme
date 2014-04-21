@@ -70,5 +70,8 @@ else {
 <body>
 <div id="page">
 <div id="header">
-<h1><a href="<?php bloginfo('url'); ?>" title="<?php bloginfo('name'); ?>"><?php bloginfo('name'); ?></a></h1>
+<h1><a href="<?php bloginfo('url'); ?>"
+    title="<?php echo get_bloginfo('description') . ' &raquo ' . get_bloginfo('name'); ?>">
+    <?php echo get_bloginfo('description') . ' &raquo ' . get_bloginfo('name'); ?>
+</a></h1>
 </div><!--/header-->
