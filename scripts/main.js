@@ -54,12 +54,4 @@ $(function(){
 
     $.stylesheetInit();
     $('.styleswitch').on('click', function() { $.stylesheetSwitch(this.getAttribute('title')); });
-
-    var today = new Date();
-    if (today.getMonth() == 3 && today.getDate() == 1 ) {
-        $('body').css({
-            '-webkit-transform': 'rotate(180deg)',
-            'transform': 'rotate(180deg)'
-        });
-    }
 });
