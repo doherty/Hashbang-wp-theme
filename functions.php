@@ -52,3 +52,7 @@ function meta_description ($post) {
 
     return $description;
 }
+
+function hashbang_no_poweredby() { return ''; }
+
+add_filter( 'widget_meta_poweredby', 'hashbang_no_poweredby' );
