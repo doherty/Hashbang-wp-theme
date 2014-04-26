@@ -19,7 +19,6 @@ if( function_exists('the_flattr_permalink') ) { the_flattr_permalink(); }
 Posted: <?php the_time('F jS, Y') ?>, by <?php the_author_posts_link(); ?><br/>
 Categories: <?php the_category(', ') ?><br/>
 Tags: <?php the_tags(''); ?><br/>
-<?php //stc_tweetbutton();<br/> ?>
 Comments: <a href="<?php comments_link(); ?>"><?php comments_number('No Comments','1 Comment','% Comments'); ?></a>.
 </div>
 
