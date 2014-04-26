@@ -4,7 +4,7 @@ Creative Commons Attribution-ShareAlike 3.0 Unported License
 </a>.</p></div><!--/copyright-->
 </div><!--/page-->
 
-<?php do_action('wp_footer'); ?>
+<?php wp_footer(); ?>
 
 </body>
 </html>
