@@ -113,7 +113,7 @@ label {
     color:#1A61AC;
 }
 
-.post-author {
+.post-author, .bypostauthor {
     border: solid 0.25em #1A61AC;
 }
 

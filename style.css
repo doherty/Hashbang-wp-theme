@@ -23,7 +23,8 @@ Tags: two-columns, white, black, blue, green, silver, fixed-layout, left-sidebar
 }
 
 
-html,body {
+html,
+body {
     margin: 0;
     text-align: center;
     font-family: JunctionRegular, verdana, sans-serif;
@@ -50,7 +51,7 @@ html,body {
 
 #header {
     margin-left: 26.9%;
-    overflow-x:hidden;
+    overflow-x: hidden;
     padding: 0;
     padding-top: 2em;
     text-transform: uppercase;
@@ -58,52 +59,52 @@ html,body {
 }
 
 #header h1 a {
-    text-decoration:none;
+    text-decoration: none;
 }
 
-#header h1 a:hover {
-    text-decoration:none;
+#header h1 a: hover {
+    text-decoration: none;
 }
 
 #leftcol {
     width: 25%;
     float: left;
     padding-right: 0.5em;
-    overflow-x:hidden;
+    overflow-x: hidden;
 }
 
 #menu {
-    margin:0;
-    text-align:right;
-    text-transform:uppercase;
-    font-size:14px;
+    margin: 0;
+    text-align: right;
+    text-transform: uppercase;
+    font-size: 14px;
 }
 
 #menu a {
-    text-decoration:none;
+    text-decoration: none;
 }
 
-#menu a:hover {
-    text-decoration:none;
+#menu a: hover {
+    text-decoration: none;
 }
 
 h2.menuheader {
-    cursor:pointer;
-    font-family:JunctionRegular, arial, sans-serif;
+    cursor: pointer;
+    font-family: JunctionRegular, verdana, sans-serif;
     font-weight: 500;
-    font-size:14px;
-    text-transform:uppercase;
-    margin:0;
-    padding:0;
+    font-size: 14px;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 0;
     outline: 0;
 }
 
 #menu ul {
-    margin:0;
-    list-style:none;
+    margin: 0;
+    list-style: none;
     width: 92%;
-    clear:left;
-    float:right;
+    clear: left;
+    float: right;
     line-height: 200%;
 }
 
@@ -113,7 +114,7 @@ h2.menuheader {
 
 ul#recentcomments {
     margin: 1em 0;
-    list-style:none;
+    list-style: none;
     line-height: 125%;
 }
 
@@ -123,14 +124,14 @@ ul#recentcomments {
 }
 
 ul#recentcomments li a {
-    width:225px;
-    display:block;
-    padding:5px 0 5px 5px;
-    text-decoration:none;
-    text-transform:uppercase;
-    font-size:14px;
-    margin:0;
-    vertical-align:bottom;
+    width: 225px;
+    display: block;
+    padding: 5px 0 5px 5px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+    margin: 0;
+    vertical-align: bottom;
 }
 
 #maincol {
@@ -142,146 +143,146 @@ ul#recentcomments li a {
 }
 
 #maincol h1 {
-    margin:0;
-    padding:0;
+    margin: 0;
+    padding: 0;
     font-weight: 500;
-    font-size:22px;
-    text-transform:uppercase;
-    clear:both;
+    font-size: 22px;
+    text-transform: uppercase;
+    clear: both;
 }
 
 #maincol h2 a {
-    text-decoration:none;
+    text-decoration: none;
 }
 
 #maincol h3 {
-    margin:0;
-    padding:0;
+    margin: 0;
+    padding: 0;
     font-weight: 500;
-    font-size:18px;
-    text-transform:uppercase;
-    clear:both;
+    font-size: 18px;
+    text-transform: uppercase;
+    clear: both;
 }
 
 #maincol h4 {
-    margin:0;
-    padding:0;
-    font-family:JunctionRegular, arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    font-family: JunctionRegular, verdana, sans-serif;
     font-weight: 500;
-    font-size:16px;
-    text-transform:uppercase;
-    clear:both;
+    font-size: 16px;
+    text-transform: uppercase;
+    clear: both;
 }
 
 #maincol h5 {
-    margin:0;
-    padding:0;
-    font-family:JunctionRegular, arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    font-family: JunctionRegular, verdana, sans-serif;
     font-weight: 500;
-    font-size:14px;
-    text-transform:uppercase;
-    clear:both;
+    font-size: 14px;
+    text-transform: uppercase;
+    clear: both;
 }
 
 #maincol h6 {
-    margin:0;
-    padding:0;
-    font-family:JunctionRegular, arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    font-family: JunctionRegular, verdana, sans-serif;
     font-weight: 500;
-    font-size:12px;
-    text-transform:uppercase;
-    clear:both;
+    font-size: 12px;
+    text-transform: uppercase;
+    clear: both;
 }
 
 #maincol p {
-    font-size:13px;
-    line-height:1.7em;
-    clear:left;
+    font-size: 13px;
+    line-height: 1.7em;
+    clear: left;
 }
 
-#maincol p a:hover {
-    text-decoration:none;
+#maincol p a: hover {
+    text-decoration: none;
 }
 
 #maincol ul {
-    font-size:13px;
-    line-height:1.7em;
-    clear:left;
+    font-size: 13px;
+    line-height: 1.7em;
+    clear: left;
 }
 
 #maincol ol {
-    font-size:13px;
-    line-height:1.7em;
-    clear:left;
+    font-size: 13px;
+    line-height: 1.7em;
+    clear: left;
 }
 
 h2.contentheader {
-    cursor:pointer;
-    position:relative;
-    float:left;
-    margin:0;
-    padding:0;
-    font-family:JunctionRegular, arial, sans-serif;
+    cursor: pointer;
+    position: relative;
+    float: left;
+    margin: 0;
+    padding: 0;
+    font-family: JunctionRegular, verdana, sans-serif;
     font-weight: 500;
-    font-size:20px;
-    text-transform:uppercase;
-    clear:left;
+    font-size: 20px;
+    text-transform: uppercase;
+    clear: left;
 }
 
-h2.contentheader:hover {
+h2.contentheader: hover {
 }
 
-h2.contentheader:active {
+h2.contentheader: active {
 }
 
 .content {
-    clear:both;
+    clear: both;
 }
 
 .permalink {
-    margin:0;
-    padding:0;
-    font-family:JunctionRegular, arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    font-family: JunctionRegular, verdana, sans-serif;
     font-weight: 500;
-    font-size:12px;
-    text-transform:uppercase;
-    clear:both;
+    font-size: 12px;
+    text-transform: uppercase;
+    clear: both;
 }
 
 .permalink a {
-    text-decoration:none;
+    text-decoration: none;
 }
 
-.permalink a:hover {
-    text-decoration:none;
+.permalink a: hover {
+    text-decoration: none;
 }
 
 table#calendar_wrap {
-    width:230px;
-    overflow:hidden;
-    clear:both;
+    width: 230px;
+    overflow: hidden;
+    clear: both;
 }
 
 #wp-calendar {
-    font-family:JunctionRegular, verdana, sans-serif;
-    font-size:13px;
-    text-decoration:none;
-    clear:both;
-    width:210px;
-    margin:6px auto;
-    padding:0 10px;
+    font-family: JunctionRegular, verdana, sans-serif;
+    font-size: 13px;
+    text-decoration: none;
+    clear: both;
+    width: 210px;
+    margin: 6px auto;
+    padding: 0 10px;
 }
 
 #wp-calendar a {
-    font-family:JunctionRegular, verdana, sans-serif;
-    font-size:13px;
-    text-decoration:none;
+    font-family: JunctionRegular, verdana, sans-serif;
+    font-size: 13px;
+    text-decoration: none;
 }
 
-#wp-calendar a:hover {
-    font-family:JunctionRegular, verdana, sans-serif;
-    font-size:13px;
-    text-decoration:none;
+#wp-calendar a: hover {
+    font-family: JunctionRegular, verdana, sans-serif;
+    font-size: 13px;
+    text-decoration: none;
 }
 
 blockquote {
@@ -290,10 +291,10 @@ blockquote {
      padding: 0px 2em;
      width: 70%;
      margin-left: auto;
-     margin-right:auto;
+     margin-right: auto;
 }
 
-blockquote:before {
+blockquote: before {
      color: #7A7A7A;
      content: "“";
      display: block;
@@ -315,19 +316,19 @@ blockquote cite {
     margin-bottom: 0.75em;
 }
 
-blockquote cite:before {
+blockquote cite: before {
     content: "— ";
 }
 
 label {
-    background-color:inherit;
-    font-size:.9em;
+    background-color: inherit;
+    font-size: .9em;
     font-weight: 500;
 }
 
 table#wp-calendar {
-    margin:0 0 20px;
-    width:140px;
+    margin: 0 0 20px;
+    width: 140px;
 }
 
 code {
@@ -343,88 +344,92 @@ code {
     font-weight: 500;
 }
 
-#s,#submit {
-    font-size:.9em;
-    margin:0 0 16px;
-    padding:4px;
-    width:130px;
+#s,
+#submit {
+    font-size: .9em;
+    margin: 0 0 16px;
+    padding: 4px;
+    width: 130px;
 }
 
-#author,#email,#url,#comment {
-    font-family:JunctionRegular, verdana, sans-serif,Tahoma,Junction, arial, sans-serif,Sans-Serif;
-    font-size:1em;
-    margin:0;
-    padding:4px;
+#author,
+#email,
+#url,
+#comment {
+    font-family: JunctionRegular, verdana, sans-serif;
+    font-size: 1em;
+    margin: 0;
+    padding: 4px;
 }
 
 #commentsection {
-    margin:25px 0 0;
+    margin: 25px 0 0;
 }
 
 #commentsection p {
-    margin:0 0 6px;
+    margin: 0 0 6px;
 }
 
 img.centered {
-    display:block;
-    margin-left:auto;
-    margin-right:auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 img.alignright {
-    padding:4px;
-    margin:0 0 2px 7px;
-    display:inline;
+    padding: 4px;
+    margin: 0 0 2px 7px;
+    display: inline;
 }
 
 img.alignleft {
-    padding:4px;
-    margin:0 7px 2px 0;
-    display:inline;
+    padding: 4px;
+    margin: 0 7px 2px 0;
+    display: inline;
 }
 
 .aligncenter {
-    display:block;
-    margin-left:auto;
-    margin-right:auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .alignright {
-    float:right;
+    float: right;
 }
 
 .alignleft {
-    float:left;
+    float: left;
 }
 
 .divider {
-    height:25px;
-    width:604px;
-    background:url(img/divider.jpg) top center no-repeat;
-    margin:10px auto 5px;
+    height: 25px;
+    width: 604px;
+    background: url(img/divider.jpg) top center no-repeat;
+    margin: 10px auto 5px;
 }
 
 .left {
-    float:left;
-    margin:10px 15px 10px 0;
+    float: left;
+    margin: 10px 15px 10px 0;
 }
 
 .right {
-    float:right;
-    margin:10px 0 5px 10px;
+    float: right;
+    margin: 10px 0 5px 10px;
 }
 
 .center {
-    margin:5px auto 12px;
-    text-align:center;
+    margin: 5px auto 12px;
+    text-align: center;
 }
 
 .textright {
-    text-align:right;
+    text-align: right;
 }
 
 .small {
-    font-size:.8em;
+    font-size: .8em;
 }
 
 .bold {
@@ -432,89 +437,80 @@ img.alignleft {
 }
 
 .hide {
-    display:none;
+    display: none;
 }
 
 .post {
-    margin:0;
+    margin: 0;
 }
 
 .postinfotext {
-    font-family:JunctionRegular, arial, sans-serif;
-    font-size:12px;
-    line-height:1.7em;
+    font-family: JunctionRegular, verdana, sans-serif;
+    font-size: 12px;
+    line-height: 1.7em;
     font-weight: 500;
-    text-transform:uppercase;
-    padding:0;
-    margin:0 0 10px;
+    text-transform: uppercase;
+    padding: 0;
+    margin: 0 0 10px;
 }
 
 .postinfotext a {
-    text-decoration:none;
+    text-decoration: none;
 }
 
-.trackable_sharing a:hover {
-    border:none !important;
+.trackable_sharing a: hover {
+    border: none !important;
 }
 
 .commentheader {
-    font-family:JunctionRegular, arial, sans-serif;
-    font-size:16px;
-    line-height:1.7em;
+    font-family: JunctionRegular, verdana, sans-serif;
+    font-size: 16px;
+    line-height: 1.7em;
     font-weight: 500;
-    text-transform:uppercase;
+    text-transform: uppercase;
 }
 
 .comment {
-    margin:0 0 10px;
-    padding:2px 5px 0 8px;
+    margin: 0 0 10px;
+    padding: 2px 5px 0 8px;
 }
 
-.commenticon {
-    font-family:JunctionRegular, arial, sans-serif;
-    font-size:1em;
-    line-height:1.7em;
+.commenticon,
+.comment-meta,
+.comment-author {
+    font-family: JunctionRegular, verdana, sans-serif;
+    font-size: 1em;
+    line-height: 1.7em;
     font-weight: 500;
-    text-transform:uppercase;
 }
 
 .commenticon a {
-    text-decoration:none;
+    text-decoration: none;
 }
 
-.broken_link, a.broken_link {
+.broken_link,
+a.broken_link {
 	text-decoration: line-through;
 }
 
-.commenttext {
-    font-size:13px;
-    line-height:1.7em;
-}
-
-.commenttext p {
-    font-size:0.8em !important;
-    line-height:1.7em;
-}
-
+.commenttext p,
 .comment p {
-    line-height:1.7em;
-    margin:0;
-    padding-bottom:2px;
+    font-size: 0.8em;
+    line-height: 1.7em;
+    margin: 0;
+    padding-bottom: 2px;
+    color: #AAA;
 }
 
-.post-author {
+.post-author,
+.bypostauthor {
     border: solid 0.25em #999;
-}
-
-.gravatarside {
-    float:right;
-    width:80px;
-    height:80px;
-    margin:0 5px 5px;
 }
 
 .avatar {
     float: right;
+    margin: 0 5px 5px;
+    height: 80px;
 }
 
 #profile-avatar > img {
@@ -522,50 +518,50 @@ img.alignleft {
 }
 
 .wp-caption {
-    text-align:center;
-    padding-top:4px;
-    margin:10px;
-    -moz-border-radius:3px;
-    -khtml-border-radius:3px;
-    -webkit-border-radius:3px;
-    border-radius:3px;
-    clear:both;
+    text-align: center;
+    padding-top: 4px;
+    margin: 10px;
+    -moz-border-radius: 3px;
+    -khtml-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    clear: both;
 }
 
 .wp-caption img {
-    margin:0;
-    padding:0;
-    border:0 none;
+    margin: 0;
+    padding: 0;
+    border: 0 none;
 }
 
 .wp-caption-dd {
-    font-size:11px;
-    line-height:17px;
-    padding:0 4px 5px;
-    margin:0;
+    font-size: 11px;
+    line-height: 17px;
+    padding: 0 4px 5px;
+    margin: 0;
 }
 
 .navigation {
-    font-family:JunctionRegular, arial, sans-serif;
-    font-size:14px;
-    line-height:1.7em;
+    font-family: JunctionRegular, verdana, sans-serif;
+    font-size: 14px;
+    line-height: 1.7em;
     font-weight: 500;
-    text-transform:uppercase;
+    text-transform: uppercase;
 }
 
 .navigation a {
-    text-decoration:none;
+    text-decoration: none;
 }
 
-.navigation a:hover {
+.navigation a: hover {
 }
 
 .prevlink {
-    margin:0 6px 0 0;
+    margin: 0 6px 0 0;
 }
 
 .nextlink {
-    margin:0 0 0 6px;
+    margin: 0 0 0 6px;
 }
 
 .copyright {
@@ -587,25 +583,25 @@ img.alignleft {
     color: #AAA;
 }
 
-.clearfix:after {
-    content:".";
-    display:block;
-    height:0;
-    clear:both;
-    visibility:hidden;
+.clearfix: after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
 }
 
 .clearfix {
-    display:inline-block;
+    display: inline-block;
 }
 
 /* Hides from IE-mac \*/
 * html .clearfix {
-    height:1%;
+    height: 1%;
 }
 
 .clearfix {
-    display:block;
+    display: block;
 }
 
 .clear {
@@ -616,18 +612,27 @@ img.alignleft {
     cursor: pointer;
 }
 
+.size-auto,
+.size-full,
+.size-large,
+.size-medium,
+.size-thumbnail {
+    max-width: 100%;
+    height: auto;
+}
+
 /* End hide from IE-mac */
 /*printer styles*/
 @media print {
     /*hide the left column when printing*/
     #leftcol
     {
-        display:none;
+        display: none;
     }
 
-    #twocols,#maincol
+    #twocols, #maincol
     {
-        width:100%;
-        float:none;
+        width: 100%;
+        float: none;
     }
 }
