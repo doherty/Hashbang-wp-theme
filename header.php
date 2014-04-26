@@ -15,11 +15,14 @@ if ( is_front_page() || is_home() ) {
 elseif ( is_single() || is_page() ) {
     $title_text = wp_title('', false) . ' &raquo ' . get_bloginfo('name');
     $desc_text  = meta_description($post);
-    $cb = function($tag){ return $tag->name; };
-    $keywords   = implode(' ', array_map(
-        $cb,
-        get_the_tags($post->ID)
-    ));
+    $tags       = get_the_tags($post->ID);
+    if ($tags) {
+        $cb       = function($tag){ return $tag->name; };
+        $keywords = implode(' ', array_map($cb, $tags));
+    }
+    else {
+        $keywords = '';
+    }
 }
 elseif (is_404()) {
     $title_text = '404 Not Found';
