@@ -1,5 +1,7 @@
 <?php
 
+if ( ! isset( $content_width ) ) $content_width = 900;
+
 if ( function_exists('register_sidebar') ) {
     register_sidebar(
         array(
