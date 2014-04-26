@@ -58,7 +58,10 @@ else {
 <link rel="stylesheet" type="text/css" href="<?php echo get_stylesheet_directory_uri(); ?>/style.min.css"              />
 <link rel="stylesheet" type="text/css" href="<?php echo get_stylesheet_directory_uri(); ?>/styles/white.css" id="skin" />
 
-<?php wp_head(); ?>
+<?php
+if ( is_singular() ) wp_enqueue_script( 'comment-reply' );
+wp_head();
+?>
 
 <link rel="shortcut icon" href="/favicon.ico" />
 
