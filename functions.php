@@ -14,6 +14,16 @@ if ( function_exists('register_sidebar') ) {
     );
 }
 
+// Work around Wordpres bug https://core.trac.wordpress.org/ticket/17926 -- see also
+// https://ma.ttias.be/wordpress-3-3-stop-replacing-double-dashes-and-single-quotes/
+// This stops Wordpress from changing (corrupting) your inputs by doing nonsense
+// like turning ' into ’. This might be an incomplete fix, but at least handles the
+// post content, which is the most important thing to not corrupt.
+remove_filter( 'the_title',    'wptexturize' );
+remove_filter( 'the_content',  'wptexturize' );
+remove_filter( 'the_excerpt',  'wptexturize' );
+remove_filter( 'comment_text', 'wptexturize' );
+
 function hashbang_jquery_scripts() {
     wp_enqueue_script(
         'hashbang-jquery',
