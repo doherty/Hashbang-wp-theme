@@ -68,3 +68,6 @@ function meta_description ($post) {
 function hashbang_no_poweredby() { return ''; }
 
 add_filter( 'widget_meta_poweredby', 'hashbang_no_poweredby' );
+
+function remove_devicepx() { wp_dequeue_script('devicepx'); }
+add_action('wp_enqueue_scripts', 'remove_devicepx');
